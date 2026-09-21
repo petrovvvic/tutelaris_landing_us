@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="web_standard" name="shell-type">
+    <title>tutelaris – Capture near misses systematically</title>
+    <meta name="description" content="Report near misses in under two minutes, spoken and anonymous, without a form. tutelaris turns reports into patterns and documented measures, first-aid log included.">>
+    <link rel="canonical" href="https://tutelarisapp.com/"><link rel="alternate" hreflang="de" href="https://tutelaris.de/"><link rel="alternate" hreflang="en" href="https://tutelarisapp.com/"><link rel="alternate" hreflang="x-default" href="https://tutelaris.de/">
+    <link rel="icon" href="https://tutelarisapp.com/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="https://tutelarisapp.com/favicon.svg"><link rel="apple-touch-icon" href="https://tutelarisapp.com/apple-touch-icon.png">
+    <meta name="theme-color" content="#4f89fb">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="tutelaris">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:url" content="https://tutelaris.de/">
+    <meta property="og:title" content="tutelaris – Capture near misses systematically">>
+    <meta property="og:description" content="Report near misses in under two minutes, spoken and anonymous, without a form. tutelaris turns reports into patterns and documented measures, first-aid log included.">>
+    <meta property="og:image" content="https://tutelaris.de/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="tutelaris – Capture near misses systematically">
+    <meta name="twitter:description" content="Report near misses in under two minutes, spoken and anonymous, without a form. tutelaris turns reports into patterns and documented measures, first-aid log included.">
+    <meta name="twitter:image" content="https://tutelaris.de/og-image.png">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..24,400..600,0..1,0" rel="stylesheet">
+    <style>@layer base{html,body{margin:0;padding:0;}html{scroll-behavior:smooth;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}/* Der Hero beginnt direkt unter dem festen Kopf: Der Verlauf trägt den Abstand, damit zwischen Navigation und Verlauf keine Kante entsteht. */.hero-top{padding-top:var(--header-h,120px);}/* Einzeilige Formularfelder: feste Höhe 35px *//* ── Produktansichten in den Tabs ─────────────────────────────   Eigenständiges CSS, weil die kompilierte Tailwind-Datei nur die   Klassen enthält, die beim Bauen vorkamen. */.tp-wrap{position:relative;}.tp-panel{display:none;}.tp-panel.is-active{display:block;animation:tp-in .22s ease-out both;}@keyframes tp-in{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}.tp-grid{display:grid;gap:40px;align-items:center;}@media(min-width:1024px){.tp-grid{grid-template-columns:5fr 7fr;gap:56px;}}.tp-eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#4f89fb;margin:0 0 10px;}.tp-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:30px;line-height:1.15;font-weight:800;letter-spacing:-.02em;color:#0b0f19;margin:0 0 14px;}@media(min-width:640px){.tp-title{font-size:36px;}}.tp-lead{font-size:16px;line-height:1.65;color:#475467;margin:0 0 20px;}.tp-points{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;}.tp-points li{display:flex;gap:10px;font-size:14.5px;line-height:1.6;color:#475467;}.tp-points b{color:#0b0f19;font-weight:600;}.tp-dot{flex:0 0 auto;width:7px;height:7px;border-radius:999px;background:#4f89fb;margin-top:8px;}.tp-note{font-size:12.5px;color:#98a2b3;margin:18px 0 0;}/* Rahmen um die Nachbauten */.tp-stage{background:linear-gradient(180deg,#f8fafc,#eef3fe);border:1px solid rgba(148,163,184,.35);border-radius:24px;padding:20px;}@media(min-width:640px){.tp-stage{padding:28px;}}.tp-phone{max-width:340px;margin:0 auto;background:#fff;border:1px solid #e4e7ec;border-radius:26px;padding:18px;box-shadow:0 18px 40px rgba(15,23,42,.10);}.tp-app{background:#fff;border:1px solid #e4e7ec;border-radius:14px;padding:18px;box-shadow:0 12px 32px rgba(15,23,42,.07);}.tp-app+.tp-app{margin-top:12px;}.tp-scroll{max-height:440px;overflow:hidden;position:relative;}.tp-fade{position:absolute;left:0;right:0;bottom:0;height:56px;background:linear-gradient(to bottom,rgba(255,255,255,0),#fff);}/* Bausteine aus dem Produkt */.tp-lbl{font-size:13px;font-weight:600;color:#344054;margin:0 0 6px;}.tp-field{border:1px solid #d0d5dd;border-radius:8px;padding:8px 12px;font-size:13.5px;color:#101828;background:#fff;min-height:35px;display:flex;align-items:center;}.tp-field.tp-multi{display:block;line-height:1.55;min-height:0;}.tp-select{display:flex;align-items:center;justify-content:space-between;gap:8px;}.tp-caret{color:#98a2b3;font-size:11px;}.tp-row{display:grid;gap:12px;}@media(min-width:640px){.tp-row.tp-2{grid-template-columns:1fr 1fr;}}.tp-btn{display:inline-flex;align-items:center;justify-content:center;border-radius:8px;padding:9px 16px;font-size:13.5px;font-weight:600;border:1px solid transparent;}.tp-btn-primary{background:#2f6fd4;color:#fff;}.tp-btn-secondary{background:#fff;color:#344054;border-color:#d0d5dd;}.tp-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}.tp-h{font-size:15px;font-weight:600;color:#101828;margin:0;}.tp-sub{font-size:13px;color:#667085;margin:3px 0 0;}.tp-kicker{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#98a2b3;margin:0 0 6px;}.tp-soft{background:#f8f9fb;border-radius:8px;padding:12px 14px;}.tp-chip{display:inline-flex;align-items:center;gap:6px;border:1px solid #e4e7ec;background:#f8f9fb;color:#475467;border-radius:999px;padding:4px 10px;font-size:11.5px;font-weight:500;}.tp-tag{display:inline-flex;border:1px solid #d0d5dd;background:#fff;color:#344054;border-radius:999px;padding:6px 13px;font-size:13px;}.tp-tag.is-on{background:#2f6fd4;border-color:#2f6fd4;color:#fff;font-weight:600;}.tp-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}.tp-badge{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:3px 9px;font-size:11.5px;font-weight:600;}.tp-badge .tp-bdot{width:7px;height:7px;border-radius:999px;}.tp-badge-high{background:#fef3f2;color:#912018;}.tp-num{font-variant-numeric:tabular-nums;}/* Ansicht 1: Aufnahme */.tp-steps{display:flex;align-items:baseline;justify-content:space-between;font-size:13px;}.tp-steps span:first-child{font-weight:500;color:#344054;}.tp-steps span:last-child{font-size:11.5px;color:#98a2b3;}.tp-progress{height:3px;border-radius:999px;background:#e4e7ec;margin-top:6px;overflow:hidden;}.tp-progress i{display:block;height:100%;width:33.3%;border-radius:999px;background:#4d8cf0;}.tp-switch{display:inline-flex;background:#f2f4f7;border-radius:8px;padding:4px;margin-bottom:14px;}.tp-switch span{padding:7px 15px;border-radius:6px;font-size:13px;font-weight:600;color:#475467;}.tp-switch span.is-on{background:#fff;color:#101828;box-shadow:0 1px 2px rgba(16,24,40,.08);}.tp-rec{display:flex;flex-direction:column;align-items:center;gap:16px;padding:18px 0;text-align:center;}.tp-mic{position:relative;display:grid;place-items:center;width:96px;height:96px;}.tp-mic .tp-ring{position:absolute;inset:0;border-radius:999px;background:rgba(239,68,68,.25);animation:tp-breathe 1.6s ease-in-out infinite;}@keyframes tp-breathe{0%,100%{transform:scale(1.05);}50%{transform:scale(1.4);}}.tp-mic .tp-core{position:relative;display:grid;place-items:center;width:96px;height:96px;border-radius:999px;background:#dc2626;color:#fff;}.tp-time{font-size:30px;font-weight:700;color:#101828;line-height:1;}.tp-bar{height:6px;width:100%;max-width:240px;border-radius:999px;background:#e4e7ec;overflow:hidden;}.tp-bar i{display:block;height:100%;width:26%;background:#dc2626;border-radius:999px;}/* Ansicht 4: Auswertung */.tp-tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;}.tp-tile{border:1px solid #e4e7ec;border-radius:12px;background:#fff;padding:12px 14px;}.tp-tile .tp-tl{font-size:12px;font-weight:500;color:#667085;}.tp-tile .tp-tv{font-size:26px;font-weight:700;color:#111827;margin-top:2px;line-height:1.1;}.tp-tile .tp-th{font-size:11px;color:#98a2b3;margin-top:2px;}.tp-rank{display:grid;place-items:center;width:22px;height:22px;border-radius:6px;background:#2f6fd4;color:#fff;font-size:11px;font-weight:700;flex:0 0 auto;}.tp-barrow{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;font-size:12.5px;color:#475467;margin-bottom:8px;}.tp-bartrack{grid-column:1 / -1;height:7px;border-radius:999px;background:#eef2f6;overflow:hidden;margin-top:-4px;}.tp-bartrack i{display:block;height:100%;border-radius:999px;}.tp-terms{display:flex;flex-wrap:wrap;gap:7px;}.tp-term{display:inline-flex;align-items:baseline;gap:5px;border-radius:8px;padding:4px 9px;background:#eef4fe;color:#2154a3;font-size:13px;}.tp-term b{font-weight:700;}.tp-term small{color:#6ba1f4;font-size:11px;}/* Ansicht 5: Rückmeldung */.tp-thanks{display:flex;gap:14px;align-items:flex-start;border:1px solid #bbf7d0;background:#f0fdf4;border-radius:14px;padding:16px;}.tp-thumb{flex:0 0 auto;display:grid;place-items:center;width:52px;height:52px;border-radius:999px;background:#0ca30c;color:#fff;}.tp-thanks h4{font-size:18px;font-weight:700;color:#14532d;margin:0;line-height:1.25;}.tp-pattern{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:8px;font-size:14px;color:#14532d;}.tp-pdots{display:flex;gap:4px;}.tp-pdots i{width:8px;height:8px;border-radius:999px;background:#0ca30c;display:block;}.tp-trail{list-style:none;margin:0;padding:0;}.tp-trail li{display:flex;gap:12px;}.tp-trail .tp-line{display:flex;flex-direction:column;align-items:center;}.tp-trail .tp-tdot{width:10px;height:10px;border-radius:999px;background:#d1d5db;margin-top:5px;flex:0 0 auto;}.tp-trail .tp-tdot.is-done{background:#0ca30c;}.tp-trail .tp-tdot.is-now{background:#4d8cf0;box-shadow:0 0 0 3px rgba(42,120,214,.18);}.tp-trail .tp-tline{width:1px;flex:1;background:#e5e7eb;}.tp-trail .tp-tline.is-done{background:#0ca30c;}.tp-trail .tp-tbody{padding-bottom:14px;}.tp-trail .tp-tbody.is-open{opacity:.55;}.tp-trail p{margin:0;font-size:13.5px;color:#1f2937;font-weight:500;}.tp-trail p.is-now{font-weight:600;color:#101828;}.tp-trail small{display:block;margin-top:2px;font-size:11.5px;color:#667085;}.tp-result{border:1px solid #bbf7d0;background:#f0fdf4;border-radius:12px;padding:14px 16px;margin-top:12px;}.tp-result .tp-kicker{color:rgba(20,83,45,.7);}.tp-result p{margin:6px 0 0;font-size:14px;color:#14532d;line-height:1.55;font-weight:500;}.tp-result small{display:block;margin-top:8px;font-size:11.5px;color:rgba(20,83,45,.8);font-weight:400;}.tp-reject{border:1px solid #fde68a;background:#fffbeb;border-radius:12px;padding:14px 16px;margin-top:12px;}.tp-reject .tp-kicker{color:rgba(120,53,15,.85);}.tp-reject p{margin:6px 0 0;font-size:13.5px;color:#78350f;line-height:1.55;}@media (prefers-reduced-motion: reduce){  .tp-panel.is-active{animation:none;}  .tp-mic .tp-ring{animation:none;transform:scale(1.2);}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}.hero-eyebrow{margin-bottom:72px;}@media (max-width:640px){.hero-eyebrow{margin-bottom:40px;}}.form-field{height:35px;padding-top:0;padding-bottom:0;line-height:35px;}.form-field:focus{box-shadow:0 0 0 3px rgba(79,137,251,.15);}.demo-booking-link:hover,.demo-success-booking:hover{color:#1e293b;}button[disabled]{opacity:.6;cursor:default;}/* Nav dropdowns: open on hover/focus with a short fade+slide; click still works on touch */.nav-dropdown-panel{opacity:0;visibility:hidden;transform:translateY(-6px);pointer-events:none;transition:opacity .18s ease,transform .18s ease,visibility .18s;}.nav-dropdown-panel::before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px;}.nav-dropdown:hover>.nav-dropdown-panel,.nav-dropdown:focus-within>.nav-dropdown-panel,.nav-dropdown.is-open>.nav-dropdown-panel{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto;}.nav-dropdown:hover>.nav-dropdown-btn .material-symbols-outlined,.nav-dropdown.is-open>.nav-dropdown-btn .material-symbols-outlined{transform:rotate(180deg);}@media (prefers-reduced-motion:reduce){.nav-dropdown-panel{transition:none;}}</style><link rel="stylesheet" href="/styles-tailwind.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "tutelaris",
+    "url": "https://tutelaris.de/",
+    "logo": "https://tutelaris.de/tutelaris-logo.svg",
+    "description": "tutelaris ist die Anwendung, mit der Beschäftigte Beinaheunfälle in unter zwei Minuten anonym melden und Fachkräfte daraus Muster und Maßnahmen ableiten."
+  }
+  </script>
+</head>
+  <body class="bg-[#FAFAFD] font-body text-[#101828] antialiased selection:bg-blue-100 selection:text-blue-900">
+    <header class="fixed top-0 left-0 right-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 transition-all">
+      <a href="https://etem.bgetem.de/3.2026/themen/hsi-tagung-smarter-schuetzen-mit-ki" target="_blank" rel="noopener" class="block w-full bg-[#EEF4FE] text-[#1c437f] text-[13px] text-center px-4 py-2.5 hover:bg-[#DBE8FD] transition-colors"><span>Read about us in</span> <strong class="font-semibold">BG ETEM Magazin</strong> <span aria-hidden="true">→</span></a>
+      <div class="h-20 max-w-[80rem] mx-auto px-6 sm:px-8 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-10">
+          <a class="flex items-center gap-2.5 focus:outline-none" data-path="home" href="index.html">
+            <img alt="" aria-hidden="true" class="h-6 w-auto object-contain rounded-md" src="/tutelaris-logo.svg"><img alt="tutelaris" class="h-5 w-auto object-contain" src="/tutelaris-logo-black.png">
+  </a>
+  <nav class="hidden lg:flex items-center gap-7">
+    <div class="relative nav-dropdown">
+      <button class="nav-dropdown-btn flex items-center gap-1 text-[15px] font-medium text-slate-700 hover:text-slate-900 py-2" type="button"><span>Features</span> <span class="material-symbols-outlined text-[18px] text-slate-400 transition-transform">expand_more</span></button>
+      <div class="nav-dropdown-panel absolute top-full left-0 mt-1 w-64 bg-white rounded-2xl border border-slate-200/80 shadow-lg p-2 z-50">
+        <a class="block px-3.5 py-2.5 rounded-xl text-[14px] font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900" href="#funktionen" data-path="beinaheunfall-management">Near Misses</a>
+        <a class="block px-3.5 py-2.5 rounded-xl text-[14px] font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900" href="#verbandsbuch-modul" data-path="verbandsbuch">First-Aid Log</a>
+      </div>
+    </div>
+    <div class="relative nav-dropdown">
+      <button class="nav-dropdown-btn flex items-center gap-1 text-[15px] font-medium text-slate-700 hover:text-slate-900 py-2" type="button"><span>Solutions</span> <span class="material-symbols-outlined text-[18px] text-slate-400 transition-transform">expand_more</span></button>
+      <div class="nav-dropdown-panel absolute top-full left-0 mt-1 w-64 bg-white rounded-2xl border border-slate-200/80 shadow-lg p-2 z-50">
+        <a class="block px-3.5 py-2.5 rounded-xl text-[14px] font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900" href="logistik.html" data-path="loesung-logistik">Logistics</a>
+        <a class="block px-3.5 py-2.5 rounded-xl text-[14px] font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900" href="produktion.html" data-path="loesung-produktion">Production</a>
+        <a class="block px-3.5 py-2.5 rounded-xl text-[14px] font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900" href="baugewerbe.html" data-path="loesung-bau">Construction</a>
+      </div>
+    </div>
+    <div class="relative nav-dropdown">
+      <button class="nav-dropdown-btn flex items-center gap-1 text-[15px] font-medium text-slate-700 hover:text-slate-900 py-2" type="button"><span>Safety Knowledge</span> <span class="material-symbols-outlined text-[18px] text-slate-400 transition-transform">expand_more</span></button>
+      <div class="nav-dropdown-panel absolute top-full left-0 mt-1 w-64 bg-white rounded-2xl border border-slate-200/80 shadow-lg p-2 z-50">
+        <a class="block px-3.5 py-2.5 rounded-xl text-[14px] font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900" href="ehs-leitfaeden.html" data-path="ressourcen">Active prevention culture</a>
+        <a class="block px-3.5 py-2.5 rounded-xl text-[14px] font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900" href="checklisten-vorlagen.html" data-path="ressourcen">Checklist Templates</a>
+        </div>
+    </div>
+    <a class="text-[15px] font-medium text-slate-700 hover:text-slate-900 py-2" data-path="preise" href="preise.html">Plans</a>
+    <a class="text-[15px] font-medium text-slate-700 hover:text-slate-900 py-2" data-path="unternehmen" href="ueber-uns.html">About Us</a>
+  </nav></div>
+  <div class="flex items-center gap-5">
+    <div class="relative nav-dropdown hidden sm:block">
+      <button class="nav-dropdown-btn flex items-center gap-1 px-3 py-1.5 rounded-full bg-white border border-slate-200/80 shadow-sm text-[14px] font-bold text-slate-900 hover:bg-slate-50" type="button" aria-haspopup="true">EN <span class="material-symbols-outlined text-[18px] text-slate-500 transition-transform">expand_more</span></button>
+      <div class="nav-dropdown-panel absolute top-full right-0 mt-2 w-44 bg-white rounded-2xl border border-slate-200/80 shadow-lg p-1.5 z-50">
+        <span class="flex items-center gap-2 px-3 py-2 rounded-lg text-[14px] font-bold text-[#4f89fb] bg-blue-50/70" aria-current="true">EN · English</span>
+        <a class="flex items-center gap-2 px-3 py-2 rounded-lg text-[14px] font-semibold text-slate-800 hover:bg-slate-50" href="https://tutelaris.de/" hreflang="de">DE · Deutsch</a>
+      </div>
+    </div>
+    
+    
+    <a class="hidden sm:inline-flex text-[15px] font-medium text-slate-700 hover:text-slate-900 px-2 py-1" data-path="login" href="#">Log in</a>
+    <a class="demo-open-btn inline-flex items-center justify-center bg-[#4f89fb] hover:bg-[#3d75e6] text-white font-medium text-[14.5px] px-5 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all h-10" data-path="demo-anfragen" href="https://meetings-na2.hubspot.com/andrei-piatrouski" target="_blank" rel="noopener">Book a Demo</a>
+    <button class="mobile-nav-toggle lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-slate-200 text-slate-700" type="button" aria-expanded="false" aria-label="Open menu">
+      <span class="material-symbols-outlined text-[22px]">menu</span>
+    </button>
+  </div></div>
+  <div class="mobile-nav-panel hidden lg:hidden border-t border-slate-100 bg-white px-6 py-4 max-h-[calc(100vh-5rem)] overflow-y-auto">
+    <div class="flex flex-col gap-1">
+      <div class="mobile-accordion">
+        <button type="button" class="mobile-accordion-btn w-full flex items-center justify-between px-2 py-2.5 rounded-lg text-[15px] font-medium text-slate-700 hover:bg-slate-50">
+          <span>Features</span>
+          <span class="material-symbols-outlined text-[20px] text-slate-400 transition-transform">expand_more</span>
+        </button>
+        <div class="mobile-accordion-panel hidden flex-col ml-2 pl-3 border-l border-slate-100">
+          <a class="px-3 py-2 rounded-lg text-[14px] text-slate-600 hover:bg-slate-50 hover:text-slate-900" href="#funktionen" data-path="beinaheunfall-management">Near Misses</a>
+          <a class="px-3 py-2 rounded-lg text-[14px] text-slate-600 hover:bg-slate-50 hover:text-slate-900" href="#verbandsbuch-modul" data-path="verbandsbuch">First-Aid Log</a>
+        </div>
+      </div>
+      <div class="mobile-accordion">
+        <button type="button" class="mobile-accordion-btn w-full flex items-center justify-between px-2 py-2.5 rounded-lg text-[15px] font-medium text-slate-700 hover:bg-slate-50">
+          <span>Solutions</span>
+          <span class="material-symbols-outlined text-[20px] text-slate-400 transition-transform">expand_more</span>
+        </button>
+        <div class="mobile-accordion-panel hidden flex-col ml-2 pl-3 border-l border-slate-100">
+          <a class="px-3 py-2 rounded-lg text-[14px] text-slate-600 hover:bg-slate-50 hover:text-slate-900" href="logistik.html" data-path="loesung-logistik">Logistics</a>
+          <a class="px-3 py-2 rounded-lg text-[14px] text-slate-600 hover:bg-slate-50 hover:text-slate-900" href="produktion.html" data-path="loesung-produktion">Production</a>
+          <a class="px-3 py-2 rounded-lg text-[14px] text-slate-600 hover:bg-slate-50 hover:text-slate-900" href="baugewerbe.html" data-path="loesung-bau">Construction</a>
+        </div>
+      </div>
+      <div class="mobile-accordion">
+        <button type="button" class="mobile-accordion-btn w-full flex items-center justify-between px-2 py-2.5 rounded-lg text-[15px] font-medium text-slate-700 hover:bg-slate-50">
+          <span>Safety Knowledge</span>
+          <span class="material-symbols-outlined text-[20px] text-slate-400 transition-transform">expand_more</span>
+        </button>
+        <div class="mobile-accordion-panel hidden flex-col ml-2 pl-3 border-l border-slate-100">
+          <a class="px-3 py-2 rounded-lg text-[14px] text-slate-600 hover:bg-slate-50 hover:text-slate-900" href="ehs-leitfaeden.html" data-path="ressourcen">Active prevention culture</a>
+          <a class="px-3 py-2 rounded-lg text-[14px] text-slate-600 hover:bg-slate-50 hover:text-slate-900" href="checklisten-vorlagen.html" data-path="ressourcen">Checklist Templates</a>
+          </div>
+      </div>
+      <a class="px-2 py-2.5 rounded-lg text-[15px] font-medium text-slate-700 hover:bg-slate-50" href="preise.html" data-path="preise">Plans</a>
+      <a class="px-2 py-2.5 rounded-lg text-[15px] font-medium text-slate-700 hover:bg-slate-50" href="ueber-uns.html" data-path="unternehmen">About Us</a>
+      <div class="border-t border-slate-100 my-2"></div>
+      <a class="px-2 py-2.5 rounded-lg text-[15px] font-medium text-slate-700 hover:bg-slate-50" href="#" data-path="login">Log in</a>
+      <div class="px-2 py-2.5">
+        <span class="text-[13px] font-semibold uppercase tracking-wide text-slate-400">Language</span>
+        <div class="mt-2 flex flex-col gap-1">
+          <span class="flex items-center gap-2 px-3 py-2 rounded-lg text-[14px] font-bold text-[#4f89fb] bg-blue-50/70" aria-current="true">EN · English</span>
+          <a class="flex items-center gap-2 px-3 py-2 rounded-lg text-[14px] font-semibold text-slate-800 hover:bg-slate-50" href="https://tutelaris.de/" hreflang="de">DE · Deutsch</a>
+        </div>
+      </div>
+      
+      
+      <a class="demo-open-btn mt-2 inline-flex items-center justify-center bg-[#4f89fb] hover:bg-[#3d75e6] text-white font-medium text-[15px] px-5 py-3 rounded-full shadow-sm transition-all" data-path="demo-anfragen" href="https://meetings-na2.hubspot.com/andrei-piatrouski" target="_blank" rel="noopener">Book a Demo</a>
+    </div>
+  </div>
+    </header><main class="w-full bg-[#FAFAFD] min-h-screen overflow-x-hidden"><div class="flex flex-col w-full">
+<div class="hero-top relative bg-gradient-to-b from-white via-[#dbe6fd] to-[#a9c3f7]">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1300px] h-[850px] bg-[radial-gradient(ellipse_at_top,rgba(79,137,251,0.38),rgba(79,137,251,0)_65%)] pointer-events-none -z-10"></div>
+<!-- 1. HERO SECTION (Personio style) -->
+<section class="relative pt-12 pb-14 sm:pt-16 sm:pb-20 max-w-[80rem] mx-auto px-6 sm:px-8 w-full"><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] sm:w-[850px] lg:w-[1000px] h-[450px] sm:h-[600px] bg-gradient-to-tr from-[#2563eb]/15 via-[#60a5fa]/20 to-transparent rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="flex flex-col items-center text-center max-w-5xl mx-auto">
+<!-- Kleine Einordnungszeile über der Überschrift -->
+<p class="hero-eyebrow text-[13.5px] sm:text-[15px] font-semibold text-slate-500 tracking-tight">Near misses as part of your prevention strategy</p>
+<!-- Extremely bold, tight Personio-style Hero Headline -->
+<h1 class="font-headline text-[40px] sm:text-[56px] lg:text-[72px] font-[900] tracking-[-0.03em] text-[#0b0f19] leading-[1.05] max-w-5xl text-center">Capture near misses<br>
+      <span class="text-[#4f89fb]">systematically.</span></h1>
+<!-- Clean, reassuring Personio Subtitle -->
+<p class="font-body text-[18px] sm:text-[21px] text-slate-600 mt-6 max-w-2xl leading-relaxed font-normal">Employees describe what happened in thirty seconds – spoken or typed, anonymous, no form. The AI turns it into data you can analyse.</p>
+<!-- Personio-style Combined Email + Demo Pill Input -->
+<div class="mt-9 w-full max-w-lg">
+<form class="demo-trigger-form flex items-center bg-white rounded-full p-1.5 border border-slate-300 shadow-[0_4px_20px_rgba(0,0,0,0.06)] focus-within:border-blue-600 focus-within:ring-2 focus-within:ring-blue-600/10 transition-all" novalidate>
+<input class="demo-email-input w-full px-5 py-3 text-[15px] text-slate-900 placeholder:text-slate-400 bg-transparent border-none focus:outline-none focus:ring-0 rounded-full font-normal" placeholder="Business email *" required="" type="email">
+<button class="shrink-0 bg-[#4f89fb] hover:bg-[#3d75e6] text-white font-semibold text-[14.5px] px-6 py-3 rounded-full transition-colors flex items-center gap-2" type="submit">Book a Demo</button>
+</form>
+<p class="demo-email-error hidden mt-2 pl-5 text-[13px] text-red-600 flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">error</span><span>Please enter a valid email address.</span></p>
+</div>
+</div>
+</section>
+<!-- 2. FUNKTIONEN MIT TABS -->
+<section id="funktionen" class="max-w-[80rem] mx-auto px-6 sm:px-8 pt-4 pb-24 w-full scroll-mt-24" aria-labelledby="funktionen-titel">
+<h2 id="funktionen-titel" class="sr-only">Features</h2>
+<div class="module-tabs flex items-center justify-center gap-2.5 sm:gap-3 flex-wrap" role="tablist" aria-label="Funktionen">
+<button class="module-tab-btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[14px] font-semibold transition-all bg-[#0b0f19] text-white shadow-md border border-slate-800" type="button" role="tab" id="tab-sofort-meldung" aria-controls="panel-sofort-meldung" aria-selected="true" tabindex="0" data-tab="sofort-meldung"><span class="tab-dot w-2 h-2 rounded-full bg-[#4f89fb]"></span><span class="material-symbols-outlined text-[19px] text-[#4f89fb]">qr_code_scanner</span><span>Instant report</span></button>
+<button class="module-tab-btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[14px] font-semibold transition-all bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/80 shadow-xs hover:shadow-sm" type="button" role="tab" id="tab-ki-vorschlag" aria-controls="panel-ki-vorschlag" aria-selected="false" tabindex="-1" data-tab="ki-vorschlag"><span class="tab-dot w-2 h-2 rounded-full bg-[#4f89fb] hidden"></span><span class="material-symbols-outlined text-[19px] text-[#4f89fb]">psychology</span><span>AI suggestion & risk</span></button>
+<button class="module-tab-btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[14px] font-semibold transition-all bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/80 shadow-xs hover:shadow-sm" type="button" role="tab" id="tab-massnahmen" aria-controls="panel-massnahmen" aria-selected="false" tabindex="-1" data-tab="massnahmen"><span class="tab-dot w-2 h-2 rounded-full bg-[#4f89fb] hidden"></span><span class="material-symbols-outlined text-[19px] text-[#4f89fb]">checklist</span><span>Measures</span></button>
+<button class="module-tab-btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[14px] font-semibold transition-all bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/80 shadow-xs hover:shadow-sm" type="button" role="tab" id="tab-datenanalyse" aria-controls="panel-datenanalyse" aria-selected="false" tabindex="-1" data-tab="datenanalyse"><span class="tab-dot w-2 h-2 rounded-full bg-[#4f89fb] hidden"></span><span class="material-symbols-outlined text-[19px] text-[#4f89fb]">insights</span><span>Analysis</span></button>
+<button class="module-tab-btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[14px] font-semibold transition-all bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/80 shadow-xs hover:shadow-sm" type="button" role="tab" id="tab-sicherheitskultur" aria-controls="panel-sicherheitskultur" aria-selected="false" tabindex="-1" data-tab="sicherheitskultur"><span class="tab-dot w-2 h-2 rounded-full bg-[#4f89fb] hidden"></span><span class="material-symbols-outlined text-[19px] text-[#4f89fb]">volunteer_activism</span><span>Safety culture</span></button>
+</div>
+<div class="tp-wrap mt-12">
+<div class="tp-panel is-active" id="panel-sofort-meldung" role="tabpanel" aria-labelledby="tab-sofort-meldung">
+<div class="tp-grid">
+<div>
+<p class="tp-eyebrow">For the workforce</p>
+<h3 class="tp-title">Tell us, don't fill in a form.</h3>
+<p class="tp-lead">A QR code at the machine, the gate or in the vehicle leads straight into the report, without signing in. Speak or type: both end up in the same analysis.</p>
+<ul class="tp-points">
+<li><span class="tp-dot"></span><span><b>Three minutes at most</b> <span>of recording, with a timer and a level meter that warns when it is too quiet.</span></span></li>
+<li><span class="tp-dot"></span><span><b>The audio file is not stored</b><span>, only the text is processed further.</span></span></li>
+<li><span class="tp-dot"></span><span><b>Anyone who prefers not to speak can type</b> <span>one or two sentences in their own words.</span></span></li>
+</ul>
+<p class="tp-note">A rebuild of the reporting view. Runs in the browser, no app to install.</p>
+</div>
+<div class="tp-stage">
+<div class="tp-phone">
+<div class="tp-steps"><span>Tell us</span><span class="tp-num">Step 1 of 3</span></div>
+<div class="tp-progress"><i></i></div>
+<div class="tp-app" style="margin-top:14px;">
+<div class="tp-switch"><span class="is-on">Speak</span><span>Type</span></div>
+<div class="tp-rec">
+<div class="tp-mic"><span class="tp-ring" aria-hidden="true"></span><span class="tp-core"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v1a7 7 0 0 0 14 0v-1"/><path d="M12 18v4"/><path d="M8 22h8"/></svg></span></div>
+<div>
+<p class="tp-time tp-num">0:47</p>
+<p class="tp-sub" style="margin-top:4px;">Recording … 2:13 left</p>
+</div>
+<div class="tp-bar"><i></i></div>
+<div class="tp-btns" style="margin-top:0;justify-content:center;">
+<span class="tp-btn tp-btn-primary">Done</span><span class="tp-btn tp-btn-secondary">Cancel</span>
+</div>
+</div>
+<p class="tp-note" style="margin-top:4px;font-size:11.5px;">Names are removed automatically. Reports serve prevention, not blame.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tp-panel" id="panel-ki-vorschlag" role="tabpanel" aria-labelledby="tab-ki-vorschlag" hidden>
+<div class="tp-grid">
+<div>
+<p class="tp-eyebrow">Free text becomes structure</p>
+<h3 class="tp-title">The AI suggests, the safety officer decides.</h3>
+<p class="tp-lead">The spoken sentences turn into a complete report: short title, what happened, area, time, activity, equipment, risk potential. Correcting is easier than answering.</p>
+<ul class="tp-points">
+<li><span class="tp-dot"></span><span><b>Two follow-up questions at most</b><span>, answered by tapping tags, instead of a form with eight mandatory fields.</span></span></li>
+<li><span class="tp-dot"></span><span><b>Names are removed automatically</b><span>, from every field, including the free text.</span></span></li>
+<li><span class="tp-dot"></span><span><b>The cause is phrased systemically</b><span>: not “careless”, but “no fixed place for extension leads”.</span></span></li>
+</ul>
+<p class="tp-note">The classification is a suggestion. It is reviewed by the safety officer.</p>
+</div>
+<div class="tp-stage">
+<div class="tp-app">
+<p class="tp-kicker">2 questions left</p>
+<p class="tp-h" style="font-size:16px;">Were there any particular conditions?</p>
+<p class="tp-sub">Multiple answers possible</p>
+<div class="tp-tags">
+<span class="tp-tag">Wet</span>
+<span class="tp-tag">Darkness</span>
+<span class="tp-tag">Noise</span>
+<span class="tp-tag is-on">Time pressure</span>
+<span class="tp-tag">None of these</span>
+</div>
+<div class="tp-btns"><span class="tp-btn tp-btn-primary">Apply</span></div>
+</div>
+<div class="tp-app tp-scroll">
+<p class="tp-h">Please check briefly</p>
+<p class="tp-sub">Everything important is filled in already. Only change what is wrong.</p>
+<div style="margin-top:14px;display:flex;flex-direction:column;gap:12px;">
+<div><p class="tp-lbl">Short title</p><div class="tp-field">Near trip over a power strip in the workshop</div></div>
+<div><p class="tp-lbl">What happened?</p><div class="tp-field tp-multi">A power strip was lying on the workshop floor, the cable was chafed in one place. Person&nbsp;A nearly stepped on it while fetching tools and only just avoided it.</div></div>
+<div class="tp-row tp-2">
+<div><p class="tp-lbl">Area</p><div class="tp-field tp-select"><span>Workshop / vehicles</span><span class="tp-caret">▾</span></div></div>
+<div><p class="tp-lbl">Location</p><div class="tp-field">Workshop, at the lifting platform</div></div>
+<div><p class="tp-lbl">When</p><div class="tp-field tp-num">15.09.2026, 06:40</div></div>
+<div><p class="tp-lbl">Risk potential</p><div class="tp-field tp-select"><span>High</span><span class="tp-caret">▾</span></div></div>
+</div>
+<div class="tp-soft">
+<p class="tp-kicker">Detected automatically · Electrical safety</p>
+<p style="margin:0;font-size:13px;color:#344054;line-height:1.55;">No fixed place for extension leads and power strips; damaged cables only surface at the annual inspection.</p>
+<p style="margin:8px 0 0;font-size:11.5px;color:#667085;">This classification is reviewed by the safety officer.</p>
+</div>
+</div>
+<div class="tp-btns"><span class="tp-btn tp-btn-primary">Report anonymously</span><span class="tp-btn tp-btn-secondary">Discard</span></div>
+<span class="tp-fade" aria-hidden="true"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="tp-panel" id="panel-massnahmen" role="tabpanel" aria-labelledby="tab-massnahmen" hidden>
+<div class="tp-grid">
+<div>
+<p class="tp-eyebrow">For the safety officer</p>
+<h3 class="tp-title">The loop closes, even with a no.</h3>
+<p class="tp-lead">A measure is created for a report or a whole pattern, with an owner, a deadline and a status. Feedback to the people who reported is a field of its own.</p>
+<ul class="tp-points">
+<li><span class="tp-dot"></span><span><b>One sentence in plain language</b><span>, separate from the technical description. That is exactly what the people who reported read.</span></span></li>
+<li><span class="tp-dot"></span><span><b>One measure answers everyone</b><span> who reported the same thing, without anyone becoming identifiable.</span></span></li>
+<li><span class="tp-dot"></span><span><b>Even a no comes with a reason.</b> <span>Silence is the most common reason people never report again.</span></span></li>
+</ul>
+<p class="tp-note">Status planned → implemented → effectiveness verified, each with owner and deadline.</p>
+</div>
+<div class="tp-stage">
+<div class="tp-app">
+<p class="tp-h">Measure</p>
+<p class="tp-sub">Whatever is decided here is seen by everyone who reported this pattern, without revealing their identity.</p>
+<div style="border:1px solid #e4e7ec;border-radius:10px;padding:12px 14px;margin-top:14px;">
+<div style="display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start;justify-content:space-between;">
+<p style="margin:0;font-size:14px;font-weight:600;color:#101828;">Fixed cable reels above the work stations</p>
+<span class="tp-chip">geplant</span>
+</div>
+<p style="margin:6px 0 0;font-size:13px;color:#475467;line-height:1.55;">A ceiling reel is mounted above every work station so no extension lead runs across the floor.</p>
+<p style="margin:8px 0 0;font-size:11.5px;color:#667085;">Workshop management · due 31 Oct 2026 · applies to workshop / vehicles</p>
+</div>
+<div style="margin-top:14px;">
+<p class="tp-lbl">Feedback to the people who reported</p>
+<div class="tp-field tp-multi">Every workshop station now has a ceiling reel. No cable lies in the walkway any more.</div>
+<p style="margin:6px 0 0;font-size:11.5px;color:#667085;">One sentence in plain language. This is the text people who reported get to read.</p>
+</div>
+<div class="tp-soft" style="margin-top:14px;display:flex;flex-direction:column;gap:8px;">
+<span style="display:flex;gap:8px;align-items:flex-start;font-size:13px;color:#344054;"><span style="flex:0 0 auto;width:13px;height:13px;border-radius:999px;border:4px solid #2f6fd4;margin-top:3px;"></span><span><span>Applies to the whole pattern</span> <b>Electrical safety</b><span>: everyone who reported this topic receives the feedback</span></span></span>
+<span style="display:flex;gap:8px;align-items:flex-start;font-size:13px;color:#667085;"><span style="flex:0 0 auto;width:13px;height:13px;border-radius:999px;border:1px solid #d0d5dd;background:#fff;margin-top:3px;"></span><span>Applies to this single report only</span></span>
+</div>
+<div class="tp-btns"><span class="tp-btn tp-btn-primary">Save measure</span><span class="tp-btn tp-btn-secondary">No measure, with a reason</span></div>
+</div>
+<div class="tp-reject">
+<p class="tp-kicker">No measure · 15 Sep 2026</p>
+<p>The area is being redesigned during the autumn refit anyway; an interim fix would create more traffic.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="tp-panel" id="panel-datenanalyse" role="tabpanel" aria-labelledby="tab-datenanalyse" hidden>
+<div class="tp-grid">
+<div>
+<p class="tp-eyebrow">Single cases become patterns</p>
+<h3 class="tp-title">From three reports sharing a cause.</h3>
+<p class="tp-lead">Below that it is a single case, and that is exactly what it says. Every pattern card names the focus area, the most common condition and the share at high risk, and it expands down to each report.</p>
+<ul class="tp-points">
+<li><span class="tp-dot"></span><span><b>Pattern detection is arithmetic, not AI</b><span>. Traceable and expandable at any time.</span></span></li>
+<li><span class="tp-dot"></span><span><b>The cause comes from the free text</b><span>, not from a drop-down chosen by the person reporting.</span></span></li>
+<li><span class="tp-dot"></span><span><b>The word field</b> <span>shows terms across every account of what happened: cable, grating, walkway.</span></span></li>
+</ul>
+<p class="tp-note">A rising curve first shows a greater willingness to report, not more danger.</p>
+</div>
+<div class="tp-stage">
+<div class="tp-app">
+<div class="tp-tiles">
+<div class="tp-tile"><div class="tp-tl">Reports in total</div><div class="tp-tv tp-num">31</div><div class="tp-th">near misses on record</div></div>
+<div class="tp-tile"><div class="tp-tl">Last 90 days</div><div class="tp-tv tp-num">14</div><div class="tp-th">newly recorded</div></div>
+<div class="tp-tile"><div class="tp-tl">High risk potential</div><div class="tp-tv tp-num" style="color:#d03b3b;">7</div><div class="tp-th">if things had gone badly</div></div>
+<div class="tp-tile"><div class="tp-tl">In recurring patterns</div><div class="tp-tv tp-num" style="color:#2f6fd4;">81 %</div><div class="tp-th">25 of 31 reports</div></div>
+</div>
+</div>
+<div class="tp-app">
+<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;">
+<div style="display:flex;align-items:center;gap:10px;min-width:0;">
+<span class="tp-rank">1</span><p class="tp-h">Slips and trips</p>
+</div>
+<span style="font-size:13px;font-weight:600;color:#101828;white-space:nowrap;" class="tp-num">8 reports</span>
+</div>
+<p style="margin:10px 0 0;font-size:13px;color:#475467;line-height:1.6;">8 of the 31 reports trace back to slips and trips, 5 of them in the treatment plant (63 %), mostly under the condition “wet”, 2 of them with high risk potential.</p>
+<div class="tp-tags" style="gap:6px;">
+<span class="tp-chip">Focus: treatment plant</span>
+<span class="tp-chip">Condition: wet</span>
+<span class="tp-badge tp-badge-high"><span class="tp-bdot" style="background:#d03b3b;"></span><span>High</span></span>
+</div>
+<p style="margin:12px 0 0;font-size:13px;font-weight:600;color:#2f6fd4;">Show evidence (8)</p>
+</div>
+<div class="tp-app">
+<p class="tp-h">Cause categories</p>
+<p class="tp-sub" style="margin-bottom:12px;">Derived automatically from the free-text account, not picked by the person reporting.</p>
+<div class="tp-barrow"><span>Slips and trips</span><span class="tp-num">8</span><span class="tp-bartrack"><i style="width:100%;background:#2154a3;"></i></span></div>
+<div class="tp-barrow"><span>Electrical safety</span><span class="tp-num">6</span><span class="tp-bartrack"><i style="width:75%;background:#2f6fd4;"></i></span></div>
+<div class="tp-barrow"><span>Housekeeping, storage, walkways</span><span class="tp-num">5</span><span class="tp-bartrack"><i style="width:62%;background:#4d8cf0;"></i></span></div>
+<div class="tp-barrow"><span>On-site traffic</span><span class="tp-num">4</span><span class="tp-bartrack"><i style="width:50%;background:#6ba1f4;"></i></span></div>
+<div class="tp-barrow"><span>PPE not worn / not available</span><span class="tp-num">4</span><span class="tp-bartrack"><i style="width:50%;background:#8fb8f7;"></i></span></div>
+</div>
+<div class="tp-app">
+<p class="tp-h">Terms from the free texts</p>
+<p class="tp-sub" style="margin-bottom:12px;">The number says in how many reports the term appears.</p>
+<div class="tp-terms">
+<span class="tp-term"><b>kabel</b><small class="tp-num">9</small></span>
+<span class="tp-term"><b>gitterrost</b><small class="tp-num">8</small></span>
+<span class="tp-term"><b>laufweg</b><small class="tp-num">7</small></span>
+<span class="tp-term"><b>steckdos</b><small class="tp-num">6</small></span>
+<span class="tp-term"><b>railing</b><small class="tp-num">6</small></span>
+<span class="tp-term"><b>schacht</b><small class="tp-num">5</small></span>
+<span class="tp-term"><b>leiter</b><small class="tp-num">5</small></span>
+<span class="tp-term"><b>gas detector</b><small class="tp-num">4</small></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tp-panel" id="panel-sicherheitskultur" role="tabpanel" aria-labelledby="tab-sicherheitskultur" hidden>
+<div class="tp-grid">
+<div>
+<p class="tp-eyebrow">Why people report again</p>
+<h3 class="tp-title">Reporting has to pay off.</h3>
+<p class="tp-lead">Not through bonuses, but because it becomes visible that something changed thanks to your own report. Right after submitting, and again later once something has come of it.</p>
+<ul class="tp-points">
+<li><span class="tp-dot"></span><span><b>The progress trail across six stages</b> <span>also shows where things are stuck. An honest interim status keeps trust.</span></span></li>
+<li><span class="tp-dot"></span><span><b>“This came of it: …”</b><span>: the safety officer’s sentence reaches the person who reported, without revealing who they are.</span></span></li>
+<li><span class="tp-dot"></span><span><b>No leaderboards, no points for individuals.</b> <span>Reporting and implementing are rewarded, never a low accident count.</span></span></li>
+</ul>
+<p class="tp-note">Every figure comes from real data in the application, nothing is estimated. Anyone reporting via the QR code without signing in sees this feedback right after submitting; the later progress is visible once signed in.</p>
+</div>
+<div class="tp-stage">
+<div class="tp-thanks">
+<span class="tp-thumb" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26" aria-hidden="true"><path d="M7 11v9H4a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h3Z"/><path d="M7 11l4.2-7.4a1.5 1.5 0 0 1 2.8.9L13 9h4.6a2 2 0 0 1 2 2.4l-1.3 6A2 2 0 0 1 16.3 19H7"/></svg></span>
+<div>
+<h4>Thank you, this will be acted on!</h4>
+<p class="tp-pattern"><span class="tp-pdots" aria-hidden="true"><i></i><i></i><i></i></span>
+<span><b>3</b> <span>reports about</span> <b>Electrical safety</b><span>, which makes it a pattern.</span></span></p>
+<p style="margin:8px 0 0;font-size:11.5px;color:rgba(20,83,45,.7);">Stored anonymously.</p>
+</div>
+</div>
+<div class="tp-app" style="margin-top:12px;">
+<p class="tp-kicker">What happens next</p>
+<ol class="tp-trail">
+<li><span class="tp-line"><span class="tp-tdot is-done"></span><span class="tp-tline is-done"></span></span><span class="tp-tbody"><p class=""><span>Received</span><span style="margin-left:8px;font-size:11.5px;font-weight:400;color:#98a2b3;" class="tp-num">15.09.2026</span></p></span></li>
+<li><span class="tp-line"><span class="tp-tdot is-now"></span><span class="tp-tline"></span></span><span class="tp-tbody"><p class="is-now">Seen by the safety officer</p></span></li>
+<li><span class="tp-line"><span class="tp-tdot is-done"></span><span class="tp-tline is-done"></span></span><span class="tp-tbody"><p class="">Recognised as a pattern</p><small>3 similar reports</small></span></li>
+<li><span class="tp-line"><span class="tp-tdot"></span><span class="tp-tline"></span></span><span class="tp-tbody is-open"><p class="">Decision pending</p></span></li>
+<li><span class="tp-line"><span class="tp-tdot"></span><span class="tp-tline"></span></span><span class="tp-tbody is-open"><p class="">Implemented</p></span></li>
+<li><span class="tp-line"><span class="tp-tdot"></span></span><span class="tp-tbody is-open"><p class="">Effectiveness verified</p></span></li>
+</ol>
+</div>
+<div class="tp-result">
+<p class="tp-kicker">What came of your report</p>
+<p>Every workshop station now has a ceiling reel. No cable lies in the walkway any more.</p>
+<small>Your report was one of 3 that led to this change.</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- 4. SOFORT STARTKLAR SECTION (tutelaris Blue) -->
+<section class="w-full bg-[#4f89fb] py-24">
+<div class="max-w-[80rem] mx-auto px-6 sm:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-[12.5px] font-bold uppercase tracking-wider text-white/80 block mb-2.5">Ready to Go Instantly</span>
+<h2 class="font-headline text-[34px] sm:text-[44px] font-extrabold text-white tracking-tight leading-tight">No months-long rollout. tutelaris is ready straight away.</h2>
+<p class="font-body text-[17px] text-white/85 mt-4 leading-relaxed">No IT project, no weeks of onboarding: print the QR codes, put them up, report. For the pilot we set up your areas together.</p>
+</div>
+<!-- Placeholder feature grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+<div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-6 flex flex-col">
+<div class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-white text-[22px]">mic</span>
+</div>
+<h3 class="font-headline text-[17px] font-bold text-white mb-2">Reported in thirty seconds</h3>
+<p class="text-[14px] text-white/80 leading-relaxed">A voice message or a few sentences, in your own words. No form, no account – scan the QR code and report.</p>
+</div>
+<div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-6 flex flex-col">
+<div class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-white text-[22px]">auto_awesome</span>
+</div>
+<h3 class="font-headline text-[17px] font-bold text-white mb-2">The AI turns it into analysable data</h3>
+<p class="text-[14px] text-white/80 leading-relaxed">Area, activity, cause and risk are derived from what was said, plus at most two follow-up questions.</p>
+</div>
+<div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-6 flex flex-col">
+<div class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-white text-[22px]">timeline</span>
+</div>
+<h3 class="font-headline text-[17px] font-bold text-white mb-2">Impact becomes visible</h3>
+<p class="text-[14px] text-white/80 leading-relaxed">After submitting, the reporter sees whether the report belongs to a pattern and follows it across six stages. No points, no leaderboard.</p>
+</div>
+<div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-6 flex flex-col">
+<div class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-white text-[22px]">visibility_off</span>
+</div>
+<h3 class="font-headline text-[17px] font-bold text-white mb-2">Anonymous from the start</h3>
+<p class="text-[14px] text-white/80 leading-relaxed">Names are removed from every field automatically. A pseudonym is stored instead.</p>
+</div>
+</div>
+<div class="flex justify-center mt-12">
+<a href="https://meetings-na2.hubspot.com/andrei-piatrouski" class="demo-open-btn inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-[#0b0f19] font-semibold text-[15px] px-7 py-3.5 rounded-full shadow-lg transition-all" data-path="demo-anfragen" target="_blank" rel="noopener">
+<span>Get Started Now</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 5. CORE FEATURES BENTO GRID (tutelaris Clean Aesthetics) -->
+<section class="max-w-[80rem] mx-auto px-6 sm:px-8 py-24 w-full">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-[12.5px] font-bold uppercase tracking-wider text-[#2563eb] block mb-2.5">Platform Modules</span>
+<h2 class="font-headline text-[34px] sm:text-[44px] font-extrabold text-[#0b0f19] tracking-tight leading-tight">Built for the shop floor – from the shift to the safety officer.</h2>
+<p class="font-body text-[17px] text-slate-600 mt-4 leading-relaxed">One app for all three roles: employees report, the safety officer reviews and decides, managers see what changed.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
+<!-- Bento 1: Mobile Reporting (Col 7) -->
+<div class="lg:col-span-7 bg-white p-8 rounded-3xl border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)] flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-[#2563eb] text-[12.5px] font-semibold mb-5 border border-blue-100">
+<span class="material-symbols-outlined text-[16px]">touch_app</span> <span>Reporting in under two minutes</span>
+        </div>
+<h3 class="font-headline text-[24px] font-bold text-slate-900 mb-3 tracking-tight">Report without signing in, without a form.</h3>
+<p class="text-[15px] text-slate-600 mb-6 leading-relaxed">QR codes at machines, gates or vehicles lead straight into the report – spoken or typed, in your own words.</p>
+</div>
+<div class="bg-[#F8F9FA] p-5 rounded-2xl border border-slate-100">
+<div class="flex flex-col sm:flex-row items-center gap-5">
+<div class="w-full sm:w-1/2 bg-white p-3 rounded-xl shadow-xs border border-slate-100">
+<div class="flex items-center justify-between mb-2">
+<span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">START A REPORT</span>
+<span class="material-symbols-outlined text-[#2563eb] text-[18px]">photo_camera</span>
+</div>
+<div class="h-28 rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="High-resolution smartphone view showing a safety inspection photo of a defective pallet racking system with yellow safety markings in an industrial warehouse setting, realistic enterprise photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7VjnIF5BL2DrknzcOmS20P816HI6ShsvR8eJ5WFlChQk9LNdwNCP2H-D2j4yVuyZfAQ-Jq9kX4IK3TxPY_s-jv_TW0mx9sWCKIGcL_L0l-IJTALV41ENK5yr_CGOjqSVr3A4ug3wr0trxyQ2TzHqen2kNTOW0_HQpdiEL8E_5y-QO84HmZ_6TJnVNhZ3hB6kINdPZr7K1avChkeqtytHKnIVRSpjqdbpAArz8pu1nB4NP6WpnO4-s">
+<span class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[10px] px-2 py-0.5 rounded font-mono">Hall 3 · QR code</span>
+</div>
+</div>
+<div class="w-full sm:w-1/2 flex flex-col gap-2.5">
+<div class="flex items-center gap-2 text-slate-800 text-[13px] font-medium">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">mic</span>
+              <span>Voice note automatically transcribed</span>
+            </div>
+<div class="flex items-center gap-2 text-slate-800 text-[13px] font-medium">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">visibility_off</span>
+              <span>Anonymous from the start</span>
+            </div>
+<div class="flex items-center gap-2 text-slate-800 text-[13px] font-medium">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">location_on</span>
+              <span>Site set via the QR code</span>
+            </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bento 2: KI Risk Scoring (Col 5) -->
+<div class="lg:col-span-5 bg-white p-8 rounded-3xl border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)] flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-[#2563eb] text-[12.5px] font-semibold mb-5 border border-blue-100">
+<span class="material-symbols-outlined text-[16px]">psychology</span> <span>An AI suggestion instead of a form</span>
+        </div>
+<h3 class="font-headline text-[24px] font-bold text-slate-900 mb-3 tracking-tight">The AI suggests, the human decides</h3>
+<p class="text-[15px] text-slate-600 mb-6 leading-relaxed">The AI proposes a classification and a risk level. The safety officer reviews and decides – pattern detection itself is arithmetic, not AI.</p>
+</div>
+<div class="bg-[#F8F9FA] p-4 rounded-2xl border border-slate-100 flex flex-col gap-2">
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-slate-100 shadow-2xs">
+<span class="text-[13px] font-medium text-slate-800">Trips / Slips / Falls</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-amber-50 text-amber-700">Level 3 (Moderate)</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-slate-100 shadow-2xs">
+<span class="text-[13px] font-medium text-slate-800">Crush hazard at conveyor belt</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-red-50 text-red-700">Level 5 (Critical)</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-slate-100 shadow-2xs">
+<span class="text-[13px] font-medium text-slate-800">PPE labelling missing</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-blue-50 text-blue-700">Level 1 (Low)</span>
+</div>
+</div>
+</div>
+<!-- Bento 3: Digitales Verbandsbuch (Col 5) -->
+<div id="verbandsbuch-modul" class="lg:col-span-5 bg-white p-8 rounded-3xl border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)] flex flex-col justify-between scroll-mt-24">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-[12.5px] font-semibold mb-5">
+<span class="material-symbols-outlined text-[16px]">medical_services</span> <span>Digital First-Aid Log</span>
+        </div>
+<h3 class="font-headline text-[24px] font-bold text-slate-900 mb-3 tracking-tight">Keep Your First-Aid Log Digital</h3>
+<p class="text-[15px] text-slate-600 mb-6 leading-relaxed">Every first-aid treatment is recorded digitally on-site in the log – fully documented, archived in DGUV-compliant form, and accessible at any time.</p>
+</div>
+<div class="bg-[#F8F9FA] p-4 rounded-2xl border border-slate-100 space-y-2">
+<div class="flex items-center justify-between text-[12px] font-medium text-slate-500 mb-1">
+<span class="">First-Aid Entries</span>
+<span class="">3 this week / 47 total</span>
+</div>
+<div class="p-2.5 bg-white rounded-xl border border-slate-100 flex items-center justify-between">
+<span class="text-[13px] font-medium text-slate-800">Cut on hand – Hall 2</span>
+<span class="text-[12px] text-slate-500 font-bold">Today, 09:12</span>
+</div>
+<div class="p-2.5 bg-white rounded-xl border border-slate-100 flex items-center justify-between">
+<span class="text-[13px] font-medium text-slate-800">Knee bruise – First responder M. Klein</span>
+<span class="text-[12px] text-emerald-600 font-bold">Recorded</span>
+</div>
+</div>
+</div>
+<!-- Bento 4: Audit Reporting (Col 7) -->
+<div class="lg:col-span-7 bg-white p-8 rounded-3xl border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)] flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-[#2563eb] text-[12.5px] font-semibold mb-5 border border-blue-100">
+<span class="material-symbols-outlined text-[16px]">analytics</span> <span>Audit-ready reports</span>
+        </div>
+<h3 class="font-headline text-[24px] font-bold text-slate-900 mb-3 tracking-tight">Exportable to any format</h3>
+<p class="text-[15px] text-slate-600 mb-6 leading-relaxed">A single report or a filtered set as PDF, CSV, JSON or Excel – with the footer “Anonymised · Serves prevention, not blame”.</p>
+</div>
+<div class="bg-[#F8F9FA] p-5 rounded-2xl border border-slate-100">
+<div class="flex items-center justify-between mb-3 text-[13px]">
+<span class="font-semibold text-slate-900">Near misses by weekday</span>
+<span class="text-slate-500 font-mono text-[12px]">Distribution per area</span>
+</div>
+<div class="grid grid-cols-7 gap-2 text-center pt-2">
+<div><div class="h-16 bg-blue-100 rounded-lg flex items-end justify-center pb-1"><span class="text-[11px] font-bold text-blue-700">12</span></div><span class="text-[11px] text-slate-400 mt-1 block">Mon</span></div>
+<div><div class="h-24 bg-[#2563eb] rounded-lg flex items-end justify-center pb-1"><span class="text-[11px] font-bold text-white">28</span></div><span class="text-[11px] text-slate-400 mt-1 block">Tue</span></div>
+<div><div class="h-14 bg-blue-100 rounded-lg flex items-end justify-center pb-1"><span class="text-[11px] font-bold text-blue-700">9</span></div><span class="text-[11px] text-slate-400 mt-1 block">Wed</span></div>
+<div><div class="h-20 bg-[#2563eb] rounded-lg flex items-end justify-center pb-1"><span class="text-[11px] font-bold text-white">19</span></div><span class="text-[11px] text-slate-400 mt-1 block">Thu</span></div>
+<div><div class="h-28 bg-[#EF4444] rounded-lg flex items-end justify-center pb-1"><span class="text-[11px] font-bold text-white">34</span></div><span class="text-[11px] text-slate-400 mt-1 block">Fri</span></div>
+<div><div class="h-8 bg-slate-200 rounded-lg flex items-end justify-center pb-1"><span class="text-[11px] font-bold text-slate-700">2</span></div><span class="text-[11px] text-slate-400 mt-1 block">Sat</span></div>
+<div><div class="h-6 bg-slate-200 rounded-lg flex items-end justify-center pb-1"><span class="text-[11px] font-bold text-slate-700">0</span></div><span class="text-[11px] text-slate-400 mt-1 block">Sun</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. PRESS MENTION -->
+<section class="max-w-[80rem] mx-auto px-6 sm:px-8 py-16 w-full">
+<div class="bg-white p-8 sm:p-14 rounded-[32px] border border-slate-200/90 shadow-[0_4px_24px_rgba(0,0,0,0.03)] flex flex-col lg:flex-row items-center gap-12">
+<div class="w-full lg:w-1/4 flex flex-col items-center text-center lg:items-start lg:text-left">
+<div class="w-24 h-24 rounded-2xl overflow-hidden shadow-sm mb-4 border border-slate-100">
+<img class="w-full h-full object-cover" alt="Andrei Piatrouski, tutelaris" src="/andrei-piatrouski.jpg">
+</div>
+<span class="text-[12.5px] font-bold uppercase tracking-wider text-slate-400 block mb-2">In the Media</span>
+<span class="font-headline text-[18px] text-slate-900 font-bold">Andrei Piatrouski</span>
+<span class="text-[14px] text-[#2563eb] font-semibold">Co-Founder &amp; CEO, tutelaris</span>
+</div>
+<div class="w-full lg:w-3/4 flex flex-col">
+<blockquote class="font-headline text-[24px] sm:text-[30px] text-slate-900 font-bold leading-snug tracking-tight">“Near misses are reported far too rarely. We want to change that.”</blockquote>
+<a class="mt-6 pt-6 border-t border-slate-100 flex items-center gap-2 text-[13.5px] text-slate-500 hover:text-[#4f89fb] transition-colors group" href="https://etem.bgetem.de/3.2026/themen/hsi-tagung-smarter-schuetzen-mit-ki" target="_blank" rel="noopener noreferrer">
+<span>Published in <span class="font-semibold text-slate-700 group-hover:text-[#4f89fb]">“etem”</span> – the magazine of the Berufsgenossenschaft Energie Textil Elektro Medienerzeugnisse (<span class="font-semibold text-slate-700 group-hover:text-[#4f89fb]">BG ETEM</span>)</span>
+<span class="material-symbols-outlined text-[16px] text-slate-400 group-hover:text-[#4f89fb]">open_in_new</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 6b. PRODUKT-VORTEILE -->
+<section id="vorteile" class="w-full bg-[#4f89fb] py-24 scroll-mt-24">
+<div class="max-w-[80rem] mx-auto px-6 sm:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-[12.5px] font-bold uppercase tracking-wider text-white/80 block mb-2.5">Your Benefits</span>
+<h2 class="font-headline text-[34px] sm:text-[44px] font-extrabold text-white tracking-tight leading-tight">Why Companies Choose tutelaris</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-7 flex flex-col">
+<div class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-white text-[22px]">report</span>
+</div>
+<h3 class="font-headline text-[18px] font-bold text-white mb-2">Ask instead of search</h3>
+<p class="text-[14.5px] text-white/80 leading-relaxed">The safety officer can query their own body of reports: are there comparable cases? Which measure works here? Every answer links to the reports it came from.</p>
+</div>
+<div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-7 flex flex-col">
+<div class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-white text-[22px]">emoji_events</span>
+</div>
+<h3 class="font-headline text-[18px] font-bold text-white mb-2">Self-efficacy instead of chasing points</h3>
+<p class="text-[14.5px] text-white/80 leading-relaxed">People who see that their report led to a change report again. Hence team goals per area, streaks that only go up – and no individual leaderboards.</p>
+</div>
+<div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-7 flex flex-col">
+<div class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-white text-[22px]">insights</span>
+</div>
+<h3 class="font-headline text-[18px] font-bold text-white mb-2">Analysable instead of filed away</h3>
+<p class="text-[14.5px] text-white/80 leading-relaxed">The cause is derived from the free text, not picked by the reporter. That is what makes analysis possible where PDF forms fail.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. FINAL HIGH-CONVERSION CTA (tutelaris Dark Slate / Glowing Blue Style) -->
+<section class="max-w-[80rem] mx-auto px-6 sm:px-8 py-20 w-full">
+<div class="bg-[#0b0f19] text-white rounded-[32px] p-10 sm:p-16 lg:p-20 shadow-2xl flex flex-col items-center text-center relative overflow-hidden border border-slate-800">
+<div class="absolute -top-32 -right-32 w-80 h-80 bg-[#2563eb]/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -left-32 w-80 h-80 bg-[#3b82f6]/10 rounded-full blur-3xl pointer-events-none"></div>
+<span class="text-[12px] font-bold uppercase tracking-wider text-blue-400 mb-3">Pilot programme · limited to 5 sites</span>
+<h2 class="font-headline text-[36px] sm:text-[52px] font-black tracking-tight text-white max-w-3xl leading-tight">Become one of our first five pilot sites.</h2>
+<p class="text-[18px] text-slate-300 max-w-2xl mt-4 font-normal leading-relaxed">Three months free, one or two areas are enough. In return we ask for honest feedback from day-to-day work.</p>
+<div class="mt-8 w-full max-w-lg">
+<form class="demo-trigger-form flex items-center bg-white rounded-full p-1.5 shadow-lg border border-slate-200" novalidate>
+<input class="demo-email-input w-full px-5 py-3 text-[15px] text-slate-900 placeholder:text-slate-400 bg-transparent border-none focus:outline-none focus:ring-0 rounded-full font-normal" placeholder="Your business email *" required="" type="email">
+<button class="shrink-0 bg-[#4f89fb] hover:bg-[#3d75e6] text-white font-semibold text-[14.5px] px-6 py-3 rounded-full transition-colors shadow-sm" type="submit">Book a Demo</button>
+</form>
+<p class="demo-email-error hidden mt-2 pl-5 text-[13px] text-red-400 flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">error</span><span>Please enter a valid email address.</span></p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-6 mt-8 text-slate-400 text-[13px]">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[#3b82f6] text-[18px]">check</span><span>Free of charge, three months</span></span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[#3b82f6] text-[18px]">check</span><span>One or two areas are enough</span></span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[#3b82f6] text-[18px]">check</span><span>All we need is your feedback</span></span>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-white border-t border-slate-200/80 pt-16 pb-12"><div class="max-w-[80rem] mx-auto px-6 sm:px-8"><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 pb-14 border-b border-slate-100"><div class="col-span-2 md:col-span-3 lg:col-span-2 flex flex-col gap-4 pr-6"><div class="flex items-center gap-2.5"><img alt="tutelaris" class="h-5 w-auto object-contain" src="/tutelaris-logo-black.png"></div><p class="text-[14px] text-slate-500 max-w-sm leading-relaxed">Report near misses in under two minutes, anonymously and without a form. Reports turn into patterns, patterns into measures.</p><div class="flex flex-wrap items-center gap-2 pt-1"><a class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-50 text-slate-700 text-[12px] font-medium border border-slate-200/60 hover:bg-slate-100 transition-colors" href="https://www.linkedin.com/company/tutelaris/" target="_blank" rel="noopener" aria-label="tutelaris auf LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.225 0H1.771C.792 0 0 .77 0 1.723v20.547C0 23.23.792 24 1.771 24h20.451C23.2 24 24 23.23 24 22.27V1.723C24 .77 23.2 0 22.222 0h.003zM6.905 20.452H3.77V9h3.135v11.452zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.368-1.852 3.6 0 4.266 2.37 4.266 5.456v6.287z"/></svg>LinkedIn</a><a class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-50 text-slate-700 text-[12px] font-medium border border-slate-200/60 hover:bg-slate-100 transition-colors" href="mailto:anfragen@tutelaris.de"><span class="material-symbols-outlined text-[15px] text-slate-500">mail</span>anfragen@tutelaris.de</a></div></div><div class="flex flex-col gap-3"><span class="text-[14px] font-bold text-slate-900">Product</span><div class="flex flex-col gap-2.5 text-[14px] text-slate-600"><a class="hover:text-slate-900 transition-colors" data-path="beinaheunfall-management" href="#funktionen">Near Misses</a><a class="hover:text-slate-900 transition-colors" data-path="verbandsbuch" href="#verbandsbuch-modul">First-Aid Log</a><a class="hover:text-slate-900 transition-colors" data-path="preise" href="preise.html">Plans</a></div></div><div class="flex flex-col gap-3"><span class="text-[14px] font-bold text-slate-900">Compliance</span><div class="flex flex-col gap-2.5 text-[14px] text-slate-600"><a class="hover:text-slate-900 transition-colors" data-path="compliance-iso-45001" href="iso-45001.html">ISO 45001</a><a class="hover:text-slate-900 transition-colors" data-path="compliance-arbschg" href="arbeitsschutzgesetz.html">Occupational Safety Act (ArbSchG)</a><a class="hover:text-slate-900 transition-colors" data-path="compliance-dguv" href="dguv-vorschriften.html">DGUV Regulations</a><a class="hover:text-slate-900 transition-colors" data-path="compliance-datenschutz" href="https://tutelaris.de/datenschutz.html">Privacy &amp; GDPR</a></div></div><div class="flex flex-col gap-3"><span class="text-[14px] font-bold text-slate-900">Company</span><div class="flex flex-col gap-2.5 text-[14px] text-slate-600"><a class="hover:text-slate-900 transition-colors" data-path="unternehmen" href="ueber-uns.html">About Us</a><a class="hover:text-slate-900 transition-colors" data-path="impressum" href="https://tutelaris.de/impressum.html">Legal Notice</a><a class="hover:text-slate-900 transition-colors" data-path="agb" href="https://tutelaris.de/agb.html">Terms &amp; Conditions</a></div></div><div class="flex flex-col gap-3"><span class="text-[14px] font-bold text-slate-900">Resources</span><div class="flex flex-col gap-2.5 text-[14px] text-slate-600"><a class="hover:text-slate-900 transition-colors" data-path="ehs-leitfaeden" href="ehs-leitfaeden.html">Active prevention culture</a><a class="hover:text-slate-900 transition-colors" data-path="checklisten-vorlagen" href="checklisten-vorlagen.html">Checklist Templates</a></div></div></div><div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px] text-slate-500"><div class="">© 2026 tutelaris. All rights reserved.</div><div class="flex items-center gap-5"><a class="hover:text-slate-900 transition-colors" href="https://tutelaris.de/impressum.html">Legal Notice</a><a class="hover:text-slate-900 transition-colors" href="https://tutelaris.de/datenschutz.html">Privacy</a><a class="hover:text-slate-900 transition-colors" href="https://tutelaris.de/agb.html">Terms &amp; Conditions</a><a class="hover:text-slate-900 transition-colors" href="sicherheit.html">Security</a></div></div></div></footer>
+
+<!-- DEMO BOOKING MODAL -->
+<div id="demo-modal" class="fixed inset-0 z-[100] hidden">
+  <div class="demo-modal-backdrop absolute inset-0 bg-slate-900/60 backdrop-blur-sm"></div>
+  <div class="relative min-h-full flex items-center justify-center p-4 sm:p-6">
+    <div class="demo-modal-panel relative w-full max-w-md bg-white rounded-[28px] shadow-2xl p-7 sm:p-8">
+      <button type="button" class="demo-modal-close absolute top-5 right-5 w-9 h-9 rounded-full flex items-center justify-center text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors" aria-label="Close">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+      <div class="w-11 h-11 rounded-xl overflow-hidden mb-4">
+        <img src="/tutelaris-logo.svg" alt="tutelaris" class="w-full h-full object-cover">
+      </div>
+      <h3 class="font-headline text-[24px] font-extrabold text-[#0b0f19] tracking-tight mb-1.5">Book a Demo</h3>
+      <p class="text-[14px] text-slate-500 mb-6">Tell us briefly about yourself – we will get back to you within one working day.</p>
+      <form id="demo-modal-form" class="flex flex-col gap-4" novalidate>
+        <div>
+          <label for="demo-field-email" class="block text-[13px] font-semibold text-slate-700 mb-1.5">Business email *</label>
+          <input id="demo-field-email" name="email" type="email" required placeholder="name@company.com" class="w-full px-4 form-field text-[14.5px] text-slate-900 placeholder:text-slate-400 bg-white border border-slate-200 rounded-lg focus:outline-none focus:border-[#4f89fb] focus:ring-2 transition-all">
+          <p id="demo-field-email-error" class="hidden mt-1.5 text-[12.5px] text-red-600 flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">error</span><span>Please enter a valid address.</span></p>
+        </div>
+        <div>
+          <label for="demo-field-company" class="block text-[13px] font-semibold text-slate-700 mb-1.5">Organisation *</label>
+          <input id="demo-field-company" name="company" type="text" required placeholder="Company name" class="w-full px-4 form-field text-[14.5px] text-slate-900 placeholder:text-slate-400 bg-white border border-slate-200 rounded-lg focus:outline-none focus:border-[#4f89fb] focus:ring-2 transition-all">
+          <p id="demo-field-company-error" class="hidden mt-1.5 text-[12.5px] text-red-600 flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">error</span><span>Please tell us your organisation.</span></p>
+        </div>
+        <div>
+          <label for="demo-field-note" class="block text-[13px] font-semibold text-slate-700 mb-1.5">How are incidents recorded at your site today? <span class="text-slate-400 font-normal">(optional)</span></label>
+          <textarea id="demo-field-note" name="note" rows="3" placeholder="e.g. paper form, PDF on the intranet, spreadsheet, not at all" class="w-full px-4 py-2.75 text-[14.5px] text-slate-900 placeholder:text-slate-400 bg-white border border-slate-200 rounded-lg focus:outline-none focus:border-[#4f89fb] focus:ring-2 transition-all"></textarea>
+        </div>
+        <div>
+          <label for="demo-field-name" class="block text-[13px] font-semibold text-slate-700 mb-1.5">Name <span class="text-slate-400 font-normal">(optional)</span></label>
+          <input id="demo-field-name" name="name" type="text" placeholder="First and last name" class="w-full px-4 form-field text-[14.5px] text-slate-900 placeholder:text-slate-400 bg-white border border-slate-200 rounded-lg focus:outline-none focus:border-[#4f89fb] focus:ring-2 transition-all">
+        </div>
+        <p id="demo-form-error" class="hidden text-[12.5px] text-red-600 flex items-start gap-1.5"><span class="material-symbols-outlined text-[15px]">error</span><span>Sending failed. Please email anfragen@tutelaris.de or pick a time directly.</span></p>
+        <button type="submit" class="mt-2 w-full inline-flex items-center justify-center gap-2 bg-[#4f89fb] hover:bg-[#3d75e6] text-white font-semibold text-[15px] px-6 py-3 rounded-xl transition-colors">
+          <span>Send request</span>
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </button>
+        <a class="demo-booking-link text-center text-[13px] font-medium text-slate-500 transition-colors" href="https://meetings-na2.hubspot.com/andrei-piatrouski" target="_blank" rel="noopener">Rather pick a time directly</a>
+        <p class="text-[11.5px] text-slate-400 text-center leading-relaxed"><span>We use your details solely to process your request.</span> <a href="https://tutelaris.de/datenschutz.html" class="underline hover:text-slate-600">Privacy</a></p>
+      </form>
+      <div id="demo-modal-success" class="hidden text-center py-4">
+        <div class="w-14 h-14 rounded-full bg-emerald-50 flex items-center justify-center mx-auto mb-4">
+          <span class="material-symbols-outlined text-emerald-600 text-[28px]">check_circle</span>
+        </div>
+        <h3 class="font-headline text-[20px] font-extrabold text-[#0b0f19] mb-1.5">Request sent</h3>
+        <p class="text-[14px] text-slate-500">Thank you – we will get back to you within one working day. You can also pick a time directly.</p>
+        <a class="demo-success-booking mt-5 inline-flex items-center justify-center gap-2 bg-[#4f89fb] hover:bg-[#3d75e6] text-white font-semibold text-[14.5px] px-5 py-2.5 rounded-xl transition-colors" href="https://meetings-na2.hubspot.com/andrei-piatrouski" target="_blank" rel="noopener">Pick a time</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div id="login-modal" class="fixed inset-0 z-[100] hidden">
+  <div class="login-modal-backdrop absolute inset-0 bg-slate-900/60 backdrop-blur-sm"></div>
+  <div class="relative min-h-full flex items-center justify-center p-4 sm:p-6">
+    <div class="relative w-full max-w-md bg-white rounded-[28px] shadow-2xl p-7 sm:p-8">
+      <button type="button" class="login-modal-close absolute top-5 right-5 w-9 h-9 rounded-full flex items-center justify-center text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors" aria-label="Close">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-11 h-11 rounded-xl overflow-hidden shrink-0">
+          <img src="/tutelaris-logo.svg" alt="tutelaris" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <div class="font-headline text-[17px] font-extrabold text-[#4f89fb] leading-tight">tutelaris</div>
+          <div class="text-[12.5px] text-slate-500 leading-tight">Workplace Safety &amp; DGUV Management</div>
+        </div>
+      </div>
+
+      <h3 class="font-headline text-[26px] font-extrabold text-[#0b0f19] tracking-tight mb-1.5">Welcome back</h3>
+      <p class="text-[14px] text-slate-500 mb-6">Near misses, reports, and first-aid log in one place.</p>
+
+      <div id="login-modal-body">
+        <form id="login-modal-form" class="flex flex-col gap-4" novalidate>
+          <div>
+            <label for="login-field-username" class="block text-[13px] font-semibold text-slate-700 mb-1.5">Username or work email</label>
+            <input id="login-field-username" name="username" type="text" autocomplete="username" placeholder="name@unternehmen.de" class="w-full px-4 form-field text-[14.5px] text-slate-900 placeholder:text-slate-400 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4f89fb]/30 focus:border-[#4f89fb] transition-all">
+          </div>
+          <div>
+            <label for="login-field-password" class="block text-[13px] font-semibold text-slate-700 mb-1.5">Password</label>
+            <div class="relative">
+              <input id="login-field-password" name="password" type="password" autocomplete="current-password" placeholder="••••••••" class="w-full px-4 form-field pr-11 text-[14.5px] text-slate-900 placeholder:text-slate-400 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4f89fb]/30 focus:border-[#4f89fb] transition-all">
+              <button type="button" class="login-password-toggle absolute right-3 top-1/2 -translate-y-1/2 w-7 h-7 flex items-center justify-center text-slate-400 hover:text-slate-600" aria-label="Passwort anzeigen">
+                <span class="material-symbols-outlined text-[19px]">visibility</span>
+              </button>
+            </div>
+          </div>
+          <button type="submit" class="mt-1 w-full inline-flex items-center justify-center gap-2 bg-[#4f89fb] hover:bg-[#3d75e6] text-white font-semibold text-[15px] px-6 py-3 rounded-xl transition-colors shadow-sm">Log in</button>
+        </form>
+
+        <div class="mt-6 pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-2 text-[12px] text-slate-500 text-center sm:text-left">
+          <span>No access yet? Get in touch with us.</span>
+          <a href="https://tutelaris.de/datenschutz.html" class="hover:text-slate-700 transition-colors">Privacy</a>
+        </div>
+      </div>
+
+      <div id="login-modal-success" class="hidden text-center py-4">
+        <div class="w-14 h-14 rounded-full bg-emerald-50 flex items-center justify-center mx-auto mb-4">
+          <span class="material-symbols-outlined text-emerald-600 text-[28px]">check_circle</span>
+        </div>
+        <h3 class="font-headline text-[20px] font-extrabold text-[#0b0f19] mb-1.5">Access coming soon</h3>
+        <p class="text-[14px] text-slate-500">The product area opens at launch. We will get in touch as soon as it is ready.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  // Höhe des festen Kopfs (Ankündigungsleiste + Navigation) an das CSS geben,
+  // damit der Hero-Verlauf exakt darunter anschließt, auch wenn die
+  // Ankündigungsleiste auf schmalen Geräten zweizeilig wird.
+  var kopfEl = document.querySelector('header');
+  function kopfHoehe() {
+    if (kopfEl) document.documentElement.style.setProperty('--header-h', kopfEl.offsetHeight + 'px');
+  }
+  kopfHoehe();
+  window.addEventListener('resize', kopfHoehe);
+  window.addEventListener('load', kopfHoehe);
+
+  // ---- Nav dropdowns (Funktionen, Lösungen, Sicherheitswissen, Über uns, DE) ----
+  var dropdowns = document.querySelectorAll('.nav-dropdown');
+  function closeAllDropdowns(except) {
+    dropdowns.forEach(function (dd) {
+      if (dd === except) return;
+      dd.classList.remove('is-open');
+    });
+  }
+  dropdowns.forEach(function (dd) {
+    var btn = dd.querySelector('.nav-dropdown-btn');
+    var panel = dd.querySelector('.nav-dropdown-panel');
+    if (!btn || !panel) return;
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var wasOpen = dd.classList.contains('is-open');
+      closeAllDropdowns(dd);
+      dd.classList.toggle('is-open', !wasOpen);
+    });
+  });
+  document.addEventListener('click', function () { closeAllDropdowns(null); });
+
+
+
+  // ---- Mobile nav toggle ----
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var mobilePanel = document.querySelector('.mobile-nav-panel');
+
+  function closeMobilePanel() {
+    if (!mobileToggle || !mobilePanel) return;
+    mobilePanel.classList.add('hidden');
+    mobileToggle.setAttribute('aria-expanded', 'false');
+    mobileToggle.querySelector('.material-symbols-outlined').textContent = 'menu';
+    mobilePanel.querySelectorAll('.mobile-accordion-panel').forEach(function (p) { p.classList.add('hidden'); p.classList.remove('flex'); });
+    mobilePanel.querySelectorAll('.mobile-accordion-btn .material-symbols-outlined').forEach(function (icon) { icon.classList.remove('rotate-180'); });
+  }
+
+  if (mobileToggle && mobilePanel) {
+    mobileToggle.addEventListener('click', function () {
+      var isHidden = mobilePanel.classList.contains('hidden');
+      if (isHidden) {
+        mobilePanel.classList.remove('hidden');
+        mobileToggle.setAttribute('aria-expanded', 'true');
+        mobileToggle.querySelector('.material-symbols-outlined').textContent = 'close';
+      } else {
+        closeMobilePanel();
+      }
+    });
+
+    // Accordion sections (Funktionen, Lösungen, Sicherheitswissen)
+    mobilePanel.querySelectorAll('.mobile-accordion-btn').forEach(function (btn) {
+      var panel = btn.nextElementSibling;
+      btn.addEventListener('click', function () {
+        var isHidden = panel.classList.contains('hidden');
+        panel.classList.toggle('hidden', !isHidden);
+        panel.classList.toggle('flex', isHidden);
+        var icon = btn.querySelector('.material-symbols-outlined');
+        if (icon) icon.classList.toggle('rotate-180', isHidden);
+      });
+    });
+
+    // Close the panel after following an actual link (not accordion toggles or the lang switch)
+    mobilePanel.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        closeMobilePanel();
+      });
+    });
+  }
+
+  // ---- Module tab pills ----
+  // ---- Funktionen-Tabs: schalten die Ansicht darunter ----
+  var tabButtons = Array.prototype.slice.call(document.querySelectorAll('.module-tab-btn'));
+  var AKTIV = ['bg-[#0b0f19]', 'text-white', 'shadow-md', 'border-slate-800'];
+  var RUHE = ['bg-white', 'hover:bg-slate-50', 'text-slate-700', 'border-slate-200/80', 'shadow-xs', 'hover:shadow-sm'];
+
+  function zeigeTab(btn, fokus) {
+    tabButtons.forEach(function (b) {
+      var an = b === btn;
+      b.classList.remove.apply(b.classList, an ? RUHE : AKTIV);
+      b.classList.add.apply(b.classList, an ? AKTIV : RUHE);
+      b.setAttribute('aria-selected', String(an));
+      b.tabIndex = an ? 0 : -1;
+      var dot = b.querySelector('.tab-dot');
+      if (dot) dot.classList.toggle('hidden', !an);
+      var panel = document.getElementById('panel-' + b.dataset.tab);
+      if (panel) {
+        panel.classList.toggle('is-active', an);
+        if (an) { panel.removeAttribute('hidden'); } else { panel.setAttribute('hidden', ''); }
+      }
+    });
+    if (fokus) btn.focus();
+  }
+
+  tabButtons.forEach(function (btn, i) {
+    btn.addEventListener('click', function () { zeigeTab(btn, false); });
+    btn.addEventListener('keydown', function (e) {
+      var schritt = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (!schritt) return;
+      e.preventDefault();
+      zeigeTab(tabButtons[(i + schritt + tabButtons.length) % tabButtons.length], true);
+    });
+  });
+
+  // ---- Email validation (replaces the browser's native validation bubble) ----
+  // Stricter than the native type="email" check, which accepts addresses
+  // without a top-level domain (e.g. "xx@yy"), require user@domain.tld.
+  function isValidEmail(value) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test((value || '').trim());
+  }
+  function showPillError(f) {
+    f.classList.remove(f.dataset.baseBorder);
+    f.classList.add('border-red-400');
+    var errorEl = f.parentElement.querySelector('.demo-email-error');
+    if (errorEl) errorEl.classList.remove('hidden');
+  }
+  function clearPillError(f) {
+    f.classList.remove('border-red-400');
+    f.classList.add(f.dataset.baseBorder);
+    var errorEl = f.parentElement.querySelector('.demo-email-error');
+    if (errorEl) errorEl.classList.add('hidden');
+  }
+
+  document.querySelectorAll('.demo-trigger-form').forEach(function (f) {
+    var input = f.querySelector('.demo-email-input');
+    if (!input) return;
+    f.dataset.baseBorder = f.classList.contains('border-slate-300') ? 'border-slate-300' : 'border-slate-200';
+    input.addEventListener('input', function () { clearPillError(f); });
+  });
+
+  // ---- Demo modal ----
+  var modal = document.getElementById('demo-modal');
+  var form = document.getElementById('demo-modal-form');
+  var success = document.getElementById('demo-modal-success');
+  var emailField = document.getElementById('demo-field-email');
+  var emailFieldError = document.getElementById('demo-field-email-error');
+
+  function showModalEmailError() {
+    emailField.classList.remove('border-slate-200');
+    emailField.classList.add('border-red-400');
+    if (emailFieldError) emailFieldError.classList.remove('hidden');
+  }
+  function clearModalEmailError() {
+    emailField.classList.remove('border-red-400');
+    emailField.classList.add('border-slate-200');
+    if (emailFieldError) emailFieldError.classList.add('hidden');
+  }
+  if (emailField) emailField.addEventListener('input', clearModalEmailError);
+
+  function openDemoModal(prefillEmail) {
+    if (!modal) return;
+    form.classList.remove('hidden');
+    success.classList.add('hidden');
+    form.reset();
+    clearModalEmailError();
+    if (prefillEmail) emailField.value = prefillEmail;
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    setTimeout(function () { emailField.focus(); }, 50);
+  }
+  function closeDemoModal() {
+    if (!modal) return;
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  // ---- HubSpot ----
+  // Portal-ID und Form-GUID stehen im Einbettungscode des HubSpot-Formulars
+  // (Marketing > Formulare > Einbetten). Solange sie leer sind, kann das
+  // Formular nicht senden und zeigt stattdessen den Fehlerhinweis.
+  var HUBSPOT_PORTAL_ID = '247446944';
+  var HUBSPOT_FORM_GUID = 'ad94d29c-b621-424a-b731-f0c27cc00909';
+  var MEETING_URL = 'https://meetings-na2.hubspot.com/andrei-piatrouski';
+
+  function bookingUrl(email) {
+    return email ? MEETING_URL + '?email=' + encodeURIComponent(email) : MEETING_URL;
+  }
+
+  // "Demo anfragen" öffnet das Formular; der href bleibt als Rückfallebene ohne JS.
+  document.querySelectorAll('.demo-open-btn').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      openDemoModal('');
+    });
+  });
+
+  // Email-Pill: Adresse prüfen, dann Formular mit vorausgefüllter Adresse öffnen
+  document.querySelectorAll('.demo-trigger-form').forEach(function (f) {
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var input = f.querySelector('.demo-email-input');
+      if (input && !isValidEmail(input.value)) {
+        showPillError(f);
+        input.focus();
+        return;
+      }
+      clearPillError(f);
+      openDemoModal(input ? input.value.trim() : '');
+    });
+  });
+
+
+
+  // Terminlink: E-Mail aus dem Formular mitgeben, bevor HubSpot geöffnet wird
+  document.querySelectorAll('.demo-booking-link, .demo-success-booking').forEach(function (el) {
+    el.addEventListener('click', function () {
+      var emailEl = document.getElementById('demo-field-email');
+      el.setAttribute('href', bookingUrl(emailEl ? emailEl.value.trim() : ''));
+    });
+  });
+
+  if (modal) {
+    modal.querySelector('.demo-modal-backdrop').addEventListener('click', closeDemoModal);
+    modal.querySelector('.demo-modal-close').addEventListener('click', closeDemoModal);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeDemoModal();
+    });
+  }
+
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (emailField && !isValidEmail(emailField.value)) {
+        showModalEmailError();
+        emailField.focus();
+        return;
+      }
+      clearModalEmailError();
+
+      var companyField = document.getElementById('demo-field-company');
+      var companyError = document.getElementById('demo-field-company-error');
+      if (companyField && !companyField.value.trim()) {
+        if (companyError) companyError.classList.remove('hidden');
+        companyField.focus();
+        return;
+      }
+      if (companyError) companyError.classList.add('hidden');
+
+      var formError = document.getElementById('demo-form-error');
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var val = function (id) {
+        var el = document.getElementById(id);
+        return el ? el.value.trim() : '';
+      };
+      var email = val('demo-field-email');
+      var note = val('demo-field-note');
+      var message = note;
+
+      var fields = [
+        { name: 'email', value: email },
+        { name: 'company', value: val('demo-field-company') }
+      ];
+      if (val('demo-field-name')) fields.push({ name: 'firstname', value: val('demo-field-name') });
+      if (message) fields.push({ name: 'message', value: message });
+
+      if (!HUBSPOT_PORTAL_ID || !HUBSPOT_FORM_GUID) {
+        if (formError) formError.classList.remove('hidden');
+        return;
+      }
+
+      if (formError) formError.classList.add('hidden');
+      if (submitBtn) submitBtn.disabled = true;
+
+      fetch('https://api.hsforms.com/submissions/v3/integration/submit/' +
+            HUBSPOT_PORTAL_ID + '/' + HUBSPOT_FORM_GUID, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          fields: fields,
+          context: { pageUri: window.location.href, pageName: document.title }
+        })
+      }).then(function (res) {
+        if (!res.ok) throw new Error('HubSpot antwortete mit ' + res.status);
+        var link = success.querySelector('.demo-success-booking');
+        if (link) link.setAttribute('href', bookingUrl(email));
+        form.classList.add('hidden');
+        success.classList.remove('hidden');
+      }).catch(function (err) {
+        console.error('[tutelaris] Formular konnte nicht gesendet werden:', err);
+        if (formError) formError.classList.remove('hidden');
+      }).then(function () {
+        if (submitBtn) submitBtn.disabled = false;
+      });
+    });
+  }
+
+  // ---- Login modal ----
+  // Demo-only: there is no product/backend to authenticate against yet.
+  // Once the product is live, swap the success branch below for a real
+  // redirect, e.g. window.location.href = 'https://app.tutelaris.de/...'.
+  var loginModal = document.getElementById('login-modal');
+  var loginForm = document.getElementById('login-modal-form');
+  var loginBody = document.getElementById('login-modal-body');
+  var loginSuccess = document.getElementById('login-modal-success');
+  var loginUsername = document.getElementById('login-field-username');
+  var loginPassword = document.getElementById('login-field-password');
+  function showLoginError() {
+    loginPassword.classList.remove('border-slate-200');
+    loginPassword.classList.add('border-red-400');
+  }
+  function clearLoginError() {
+    loginPassword.classList.remove('border-red-400');
+    loginPassword.classList.add('border-slate-200');
+  }
+  function showLoginSuccess() {
+    if (loginBody) loginBody.classList.add('hidden');
+    if (loginSuccess) loginSuccess.classList.remove('hidden');
+  }
+
+  function openLoginModal() {
+    if (!loginModal) return;
+    if (loginForm) loginForm.reset();
+    clearLoginError();
+    if (loginBody) loginBody.classList.remove('hidden');
+    if (loginSuccess) loginSuccess.classList.add('hidden');
+    if (loginPassword) loginPassword.type = 'password';
+    var toggleIcon = loginModal.querySelector('.login-password-toggle .material-symbols-outlined');
+    if (toggleIcon) toggleIcon.textContent = 'visibility';
+    loginModal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    setTimeout(function () { if (loginUsername) loginUsername.focus(); }, 50);
+  }
+  function closeLoginModal() {
+    if (!loginModal) return;
+    loginModal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('[data-path="login"]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      openLoginModal();
+    });
+  });
+
+  if (loginModal) {
+    loginModal.querySelector('.login-modal-backdrop').addEventListener('click', closeLoginModal);
+    loginModal.querySelector('.login-modal-close').addEventListener('click', closeLoginModal);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeLoginModal();
+    });
+
+    loginModal.querySelector('.login-password-toggle').addEventListener('click', function () {
+      var isHidden = loginPassword.type === 'password';
+      loginPassword.type = isHidden ? 'text' : 'password';
+      this.querySelector('.material-symbols-outlined').textContent = isHidden ? 'visibility_off' : 'visibility';
+    });
+
+    if (loginPassword) loginPassword.addEventListener('input', clearLoginError);
+
+    if (loginForm) {
+      loginForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        // Kein Produktzugang vorhanden: Eingaben werden nirgendwohin gesendet,
+        // der Dialog zeigt nur den Hinweis auf den Produktstart.
+        clearLoginError();
+        showLoginSuccess();
+      });
+    }
+
+  }
+})();
+</script>
+
+</body></html>
