@@ -22,10 +22,6 @@
     <meta name="twitter:title" content="tutelaris - Plans">
     <meta name="twitter:description" content="The tutelaris pilot programme: three months free for five sites. No contract, no price list, just your feedback.">
     <meta name="twitter:image" content="https://tutelaris.de/og-image.png">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..24,400..600,0..1,0" rel="stylesheet">
     <style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}/* Ablauf des Pilots: Nummer links, Text daneben */.schritte{display:grid;gap:36px;}@media(min-width:640px){.schritte{grid-template-columns:1fr 1fr;column-gap:48px;row-gap:40px;}}.schritt{position:relative;padding-left:60px;}.schritt-nr{position:absolute;left:0;top:-2px;width:40px;height:40px;border-radius:999px;background:#4f89fb;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;line-height:1;}/* Der Hero beginnt direkt unter dem festen Kopf: Der Verlauf trägt den Abstand, damit zwischen Navigation und Verlauf keine Kante entsteht. */.hero-top{padding-top:var(--header-h,120px);}/* Einzeilige Formularfelder: feste Höhe 35px */.form-field{height:35px;padding-top:0;padding-bottom:0;line-height:35px;}.form-field:focus{box-shadow:0 0 0 3px rgba(79,137,251,.15);}.demo-booking-link:hover,.demo-success-booking:hover{color:#1e293b;}button[disabled]{opacity:.6;cursor:default;}/* Nav dropdowns: open on hover/focus with a short fade+slide; click still works on touch */.nav-dropdown-panel{opacity:0;visibility:hidden;transform:translateY(-6px);pointer-events:none;transition:opacity .18s ease,transform .18s ease,visibility .18s;}.nav-dropdown-panel::before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px;}.nav-dropdown:hover>.nav-dropdown-panel,.nav-dropdown:focus-within>.nav-dropdown-panel,.nav-dropdown.is-open>.nav-dropdown-panel{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto;}.nav-dropdown:hover>.nav-dropdown-btn .material-symbols-outlined,.nav-dropdown.is-open>.nav-dropdown-btn .material-symbols-outlined{transform:rotate(180deg);}@media (prefers-reduced-motion:reduce){.nav-dropdown-panel{transition:none;}}</style><link rel="stylesheet" href="/styles-tailwind.css">
   <script type="application/ld+json">
   {
@@ -34,13 +30,67 @@
     "name": "tutelaris",
     "url": "https://tutelaris.de/",
     "logo": "https://tutelaris.de/tutelaris-logo.svg",
-    "description": "tutelaris ist die Plattform für Beinaheunfall-Management, digitales Verbandsbuch und Arbeitsschutz."
+    "description": "tutelaris ist die Plattform für Beinaheunfall-Management, digitales Verbandsbuch und Arbeitsschutz.",
+    "sameAs": ["https://www.linkedin.com/company/tutelaris/"]
   }
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://tutelarisapp.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Plans",
+      "item": "https://tutelarisapp.com/preise.html"
+    }
+  ]
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does the pilot cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nothing. Three months, no cost, no contract, no automatic renewal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the first-aid log included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. First-aid documentation under DGUV rule 1 §24 is part of the pilot."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do we need to prepare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No IT project. You pick one or two areas, we generate the QR codes to put up, and reporting then works without signing in."
+      }
+    }
+  ]
+}
   </script>
 </head>
   <body class="bg-[#FAFAFD] font-body text-[#101828] antialiased selection:bg-blue-100 selection:text-blue-900">
     <header class="fixed top-0 left-0 right-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 transition-all">
-      <a href="https://etem.bgetem.de/3.2026/themen/hsi-tagung-smarter-schuetzen-mit-ki" target="_blank" rel="noopener" class="block w-full bg-[#EEF4FE] text-[#1c437f] text-[13px] text-center px-4 py-2.5 hover:bg-[#DBE8FD] transition-colors"><span>Read about us in</span> <strong class="font-semibold">BG ETEM Magazin</strong> <span aria-hidden="true">→</span></a>
+      
       <div class="h-20 max-w-[80rem] mx-auto px-6 sm:px-8 flex items-center justify-between gap-4">
         <div class="flex items-center gap-10">
           <a class="flex items-center gap-2.5 focus:outline-none" data-path="home" href="index.html">
@@ -717,4 +767,7 @@
 })();
 </script>
 
+
+<!-- Cloudflare Web Analytics: ohne Cookies, daher ohne Einwilligungsbanner -->
+<script defer type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5e985a0e0274410aad3a7441aac2fa57"}'></script>
 </body></html>
