@@ -1,0 +1,22 @@
+/* Shared finishing details: typography and responsive controls. */
+header .demo-open-btn { white-space: nowrap; }
+header img { flex-shrink: 0; }
+.demo-email-input { min-width: 0; }
+.hero-top h1 { text-wrap: balance; }
+.tp-grid > * { min-width: 0; }
+@media (max-width: 639px) {
+  header .demo-open-btn { font-size: 12px; padding-inline: 12px; }
+  header img[alt="tutelaris"] { max-width: 108px; height: auto; }
+  .hero-top h1 { font-size: clamp(34px, 10.8vw, 44px); }
+  .module-tabs { flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; padding: 4px 2px 12px; scroll-snap-type: x proximity; }
+  .module-tab-btn { white-space: nowrap; flex-shrink: 0; scroll-snap-align: start; }
+  .tp-stage { padding: 14px; }
+  .demo-trigger-form button { padding-inline: 16px; }
+  .demo-email-input { padding-inline: 16px; }
+}
+@media (max-width: 359px) { header .demo-open-btn { display: none; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.privacy-settings { display:block; margin: 0 auto 24px; font:inherit; font-size:13px; color:#475467; text-decoration:underline; }
+
+@media (max-width: 639px) { footer .flex.items-center.gap-5 { flex-wrap: wrap; justify-content: center; gap: 12px 20px; } }
