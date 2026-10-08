@@ -365,9 +365,14 @@
   function kopfHoehe() {
     if (kopfEl) document.documentElement.style.setProperty('--header-h', kopfEl.offsetHeight + 'px');
   }
-  kopfHoehe();
-  window.addEventListener('resize', kopfHoehe);
-  window.addEventListener('load', kopfHoehe);
+  // ResizeObserver misst nach dem Layout, statt es beim Parsen zu erzwingen.
+  if (kopfEl && window.ResizeObserver) {
+    new ResizeObserver(kopfHoehe).observe(kopfEl);
+  } else {
+    kopfHoehe();
+    window.addEventListener('resize', kopfHoehe);
+    window.addEventListener('load', kopfHoehe);
+  }
 
   // ---- Nav dropdowns (Funktionen, Lösungen, Sicherheitswissen, Über uns, DE) ----
   var dropdowns = document.querySelectorAll('.nav-dropdown');
