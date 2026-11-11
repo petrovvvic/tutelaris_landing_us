@@ -22,7 +22,7 @@
     <meta name="twitter:title" content="tutelaris - DGUV rules">
     <meta name="twitter:description" content="DGUV rules 1 and 2: first-aid documentation, safety specialists and reportable accidents.">
     <meta name="twitter:image" content="https://tutelarisapp.com/og-image.png">
-    <style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}/* Fenster für Demo-Anfrage und Login: auf kleinen Geräten scrollbar   und kompakter, damit das Formular nicht unten abgeschnitten wird. */#demo-modal,#login-modal{overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;}@media (max-width:640px){  #demo-modal>div:last-child,#login-modal>div:last-child{align-items:flex-start;padding:12px;}  .demo-modal-panel,#login-modal .relative.w-full{padding:20px 18px;border-radius:20px;}  .demo-modal-panel h3,#login-modal h3{font-size:20px;line-height:1.25;}  #demo-modal-form{gap:10px;}  #demo-modal-form label{margin-bottom:3px;}  #demo-field-note{min-height:0;height:64px;}  .demo-modal-panel>p{margin-bottom:14px;}}/* Einzeilige Formularfelder: feste Höhe 35px */.form-field{height:35px;padding-top:0;padding-bottom:0;line-height:35px;}.form-field:focus{box-shadow:0 0 0 3px rgba(79,137,251,.15);}.demo-booking-link:hover,.demo-success-booking:hover{color:#1e293b;}button[disabled]{opacity:.6;cursor:default;}/* Nav dropdowns: open on hover/focus with a short fade+slide; click still works on touch */.nav-dropdown-panel{opacity:0;visibility:hidden;transform:translateY(-6px);pointer-events:none;transition:opacity .18s ease,transform .18s ease,visibility .18s;}.nav-dropdown-panel::before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px;}.nav-dropdown:hover>.nav-dropdown-panel,.nav-dropdown:focus-within>.nav-dropdown-panel,.nav-dropdown.is-open>.nav-dropdown-panel{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto;}.nav-dropdown:hover>.nav-dropdown-btn .material-symbols-outlined,.nav-dropdown.is-open>.nav-dropdown-btn .material-symbols-outlined{transform:rotate(180deg);}@media (prefers-reduced-motion:reduce){.nav-dropdown-panel{transition:none;}}</style><link rel="stylesheet" href="/styles-tailwind.css">
+    <style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}/* Fenster für Demo-Anfrage und Login: auf kleinen Geräten scrollbar   und kompakter, damit das Formular nicht unten abgeschnitten wird. */#demo-modal{overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;}@media (max-width:640px){  #demo-modal>div:last-child{align-items:flex-start;padding:12px;}  .demo-modal-panel{padding:20px 18px;border-radius:20px;}  .demo-modal-panel h3{font-size:20px;line-height:1.25;}  #demo-modal-form{gap:10px;}  #demo-modal-form label{margin-bottom:3px;}  #demo-field-note{min-height:0;height:64px;}  .demo-modal-panel>p{margin-bottom:14px;}}/* Einzeilige Formularfelder: feste Höhe 35px */.form-field{height:35px;padding-top:0;padding-bottom:0;line-height:35px;}.form-field:focus{box-shadow:0 0 0 3px rgba(79,137,251,.15);}.demo-booking-link:hover,.demo-success-booking:hover{color:#1e293b;}button[disabled]{opacity:.6;cursor:default;}/* Nav dropdowns: open on hover/focus with a short fade+slide; click still works on touch */.nav-dropdown-panel{opacity:0;visibility:hidden;transform:translateY(-6px);pointer-events:none;transition:opacity .18s ease,transform .18s ease,visibility .18s;}.nav-dropdown-panel::before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px;}.nav-dropdown:hover>.nav-dropdown-panel,.nav-dropdown:focus-within>.nav-dropdown-panel,.nav-dropdown.is-open>.nav-dropdown-panel{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto;}.nav-dropdown:hover>.nav-dropdown-btn .material-symbols-outlined,.nav-dropdown.is-open>.nav-dropdown-btn .material-symbols-outlined{transform:rotate(180deg);}@media (prefers-reduced-motion:reduce){.nav-dropdown-panel{transition:none;}}</style><link rel="stylesheet" href="/styles-tailwind.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -221,63 +221,6 @@
         <a class="demo-success-booking mt-5 inline-flex items-center justify-center gap-2 bg-[#4f89fb] hover:bg-[#3d75e6] text-white font-semibold text-[14.5px] px-5 py-2.5 rounded-xl transition-colors" href="https://meetings-na2.hubspot.com/andrei-piatrouski" target="_blank" rel="noopener">Pick a time</a>
       </div>
 
-    </div>
-  </div>
-</div>
-
-<!-- LOGIN MODAL -->
-<div id="login-modal" class="fixed inset-0 z-[100] hidden">
-  <div class="login-modal-backdrop absolute inset-0 bg-slate-900/60 backdrop-blur-sm"></div>
-  <div class="relative min-h-full flex items-center justify-center p-4 sm:p-6">
-    <div class="relative w-full max-w-md bg-white rounded-[28px] shadow-2xl p-7 sm:p-8">
-      <button type="button" class="login-modal-close absolute top-5 right-5 w-9 h-9 rounded-full flex items-center justify-center text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors" aria-label="Schließen">
-        <span class="material-symbols-outlined text-[20px]">close</span>
-      </button>
-
-      <div class="flex items-center gap-3 mb-6">
-        <div class="w-11 h-11 rounded-xl overflow-hidden shrink-0">
-          <img src="/tutelaris-logo.svg" alt="tutelaris" class="w-full h-full object-cover">
-        </div>
-        <div>
-          <div class="font-headline text-[17px] font-extrabold text-[#4f89fb] leading-tight">tutelaris</div>
-          <div class="text-[12.5px] text-slate-500 leading-tight">Occupational safety &amp; DGUV management</div>
-        </div>
-      </div>
-
-      <h3 class="font-headline text-[26px] font-extrabold text-[#0b0f19] tracking-tight mb-1.5">Welcome back</h3>
-      <p class="text-[14px] text-slate-500 mb-6">Near misses, reports, and first-aid log in one place.</p>
-
-      <div id="login-modal-body">
-        <form id="login-modal-form" class="flex flex-col gap-4" novalidate>
-          <div>
-            <label for="login-field-username" class="block text-[13px] font-semibold text-slate-700 mb-1.5">Username or work email</label>
-            <input id="login-field-username" name="username" type="text" autocomplete="username" placeholder="name@unternehmen.de" class="w-full px-4 form-field text-[14.5px] text-slate-900 placeholder:text-slate-400 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4f89fb]/30 focus:border-[#4f89fb] transition-all">
-          </div>
-          <div>
-            <label for="login-field-password" class="block text-[13px] font-semibold text-slate-700 mb-1.5">Password</label>
-            <div class="relative">
-              <input id="login-field-password" name="password" type="password" autocomplete="current-password" placeholder="••••••••" class="w-full px-4 form-field pr-11 text-[14.5px] text-slate-900 placeholder:text-slate-400 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4f89fb]/30 focus:border-[#4f89fb] transition-all">
-              <button type="button" class="login-password-toggle absolute right-3 top-1/2 -translate-y-1/2 w-7 h-7 flex items-center justify-center text-slate-400 hover:text-slate-600" aria-label="Passwort anzeigen">
-                <span class="material-symbols-outlined text-[19px]">visibility</span>
-              </button>
-            </div>
-          </div>
-          <button type="submit" class="mt-1 w-full inline-flex items-center justify-center gap-2 bg-[#4f89fb] hover:bg-[#3d75e6] text-white font-semibold text-[15px] px-6 py-3 rounded-xl transition-colors shadow-sm">Log in</button>
-        </form>
-
-        <div class="mt-6 pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-2 text-[12px] text-slate-500 text-center sm:text-left">
-          <span>No access yet? Get in touch with us.</span>
-          <a href="https://tutelaris.de/datenschutz.html" class="hover:text-slate-700 transition-colors">Privacy</a>
-        </div>
-      </div>
-
-      <div id="login-modal-success" class="hidden text-center py-4">
-        <div class="w-14 h-14 rounded-full bg-emerald-50 flex items-center justify-center mx-auto mb-4">
-          <span class="material-symbols-outlined text-emerald-600 text-[28px]">check_circle</span>
-        </div>
-        <h3 class="font-headline text-[20px] font-extrabold text-[#0b0f19] mb-1.5">Access coming soon</h3>
-        <p class="text-[14px] text-slate-500">The product area opens at launch. We will get in touch as soon as it is ready.</p>
-      </div>
     </div>
   </div>
 </div>
@@ -534,75 +477,6 @@
         if (submitBtn) submitBtn.disabled = false;
       });
     });
-  }
-
-  // ---- Login modal ----
-  // Demo-only: there is no product/backend to authenticate against yet.
-  // Once the product is live, swap the success branch below for a real
-  // redirect, e.g. window.location.href = 'https://app.tutelaris.de/...'.
-  var loginModal = document.getElementById('login-modal');
-  var loginForm = document.getElementById('login-modal-form');
-  var loginBody = document.getElementById('login-modal-body');
-  var loginSuccess = document.getElementById('login-modal-success');
-  var loginUsername = document.getElementById('login-field-username');
-  var loginPassword = document.getElementById('login-field-password');
-  function showLoginError() {
-    loginPassword.classList.remove('border-slate-200');
-    loginPassword.classList.add('border-red-400');
-  }
-  function clearLoginError() {
-    loginPassword.classList.remove('border-red-400');
-    loginPassword.classList.add('border-slate-200');
-  }
-  function showLoginSuccess() {
-    if (loginBody) loginBody.classList.add('hidden');
-    if (loginSuccess) loginSuccess.classList.remove('hidden');
-  }
-
-  function openLoginModal() {
-    if (!loginModal) return;
-    if (loginForm) loginForm.reset();
-    clearLoginError();
-    if (loginBody) loginBody.classList.remove('hidden');
-    if (loginSuccess) loginSuccess.classList.add('hidden');
-    if (loginPassword) loginPassword.type = 'password';
-    var toggleIcon = loginModal.querySelector('.login-password-toggle .material-symbols-outlined');
-    if (toggleIcon) toggleIcon.textContent = 'visibility';
-    loginModal.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
-    setTimeout(function () { if (loginUsername) loginUsername.focus(); }, 50);
-  }
-  function closeLoginModal() {
-    if (!loginModal) return;
-    loginModal.classList.add('hidden');
-    document.body.style.overflow = '';
-  }
-
-  if (loginModal) {
-    loginModal.querySelector('.login-modal-backdrop').addEventListener('click', closeLoginModal);
-    loginModal.querySelector('.login-modal-close').addEventListener('click', closeLoginModal);
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') closeLoginModal();
-    });
-
-    loginModal.querySelector('.login-password-toggle').addEventListener('click', function () {
-      var isHidden = loginPassword.type === 'password';
-      loginPassword.type = isHidden ? 'text' : 'password';
-      this.querySelector('.material-symbols-outlined').textContent = isHidden ? 'visibility_off' : 'visibility';
-    });
-
-    if (loginPassword) loginPassword.addEventListener('input', clearLoginError);
-
-    if (loginForm) {
-      loginForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        // Kein Produktzugang vorhanden: Eingaben werden nirgendwohin gesendet,
-        // der Dialog zeigt nur den Hinweis auf den Produktstart.
-        clearLoginError();
-        showLoginSuccess();
-      });
-    }
-
   }
 })();
 </script>
