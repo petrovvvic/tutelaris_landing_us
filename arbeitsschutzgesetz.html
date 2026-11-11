@@ -80,7 +80,7 @@
     </div>
     
     
-    <a class="hidden sm:inline-flex text-[15px] font-medium text-slate-700 hover:text-slate-900 px-2 py-1" data-path="login" href="#">Log in</a>
+    <a class="hidden sm:inline-flex text-[15px] font-medium text-slate-700 hover:text-slate-900 px-2 py-1" data-path="login" href="https://app.tutelaris.de/?lang=en">Log in</a>
     <a class="demo-open-btn inline-flex items-center justify-center bg-[#4f89fb] hover:bg-[#3d75e6] text-white font-medium text-[14.5px] px-5 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all h-10" data-path="demo-anfragen" href="https://meetings-na2.hubspot.com/andrei-piatrouski" target="_blank" rel="noopener">Book a Demo</a>
     <button class="mobile-nav-toggle lg:hidden flex items-center justify-center w-10 h-10 rounded-full border border-slate-200 text-slate-700" type="button" aria-expanded="false" aria-label="Menü öffnen">
       <span class="material-symbols-outlined text-[22px]">menu</span>
@@ -122,7 +122,7 @@
       <a class="px-2 py-2.5 rounded-lg text-[15px] font-medium text-slate-700 hover:bg-slate-50" href="preise.html" data-path="preise">Plans</a>
       <a class="px-2 py-2.5 rounded-lg text-[15px] font-medium text-slate-700 hover:bg-slate-50" href="ueber-uns.html" data-path="unternehmen">About Us</a>
       <div class="border-t border-slate-100 my-2"></div>
-      <a class="px-2 py-2.5 rounded-lg text-[15px] font-medium text-slate-700 hover:bg-slate-50" href="#" data-path="login">Log in</a>
+      <a class="px-2 py-2.5 rounded-lg text-[15px] font-medium text-slate-700 hover:bg-slate-50" href="https://app.tutelaris.de/?lang=en" data-path="login">Log in</a>
       <div class="px-2 py-2.5">
         <span class="text-[13px] font-semibold uppercase tracking-wide text-slate-400">Language</span>
         <div class="mt-2 flex flex-col gap-1">
@@ -579,13 +579,6 @@
     loginModal.classList.add('hidden');
     document.body.style.overflow = '';
   }
-
-  document.querySelectorAll('[data-path="login"]').forEach(function (el) {
-    el.addEventListener('click', function (e) {
-      e.preventDefault();
-      openLoginModal();
-    });
-  });
 
   if (loginModal) {
     loginModal.querySelector('.login-modal-backdrop').addEventListener('click', closeLoginModal);
